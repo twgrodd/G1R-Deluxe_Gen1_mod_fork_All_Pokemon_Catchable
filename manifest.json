@@ -1,0 +1,14 @@
+{"id": "all_pokemon_catchable_151_mod",
+  "name": "All Pokemon Catchable 151 Mod",
+  "version": "0.1.0",
+  "api": 2,
+  "entry": "main.lua",
+  "profile": "content",
+  "category": "GAMEPLAY",
+  "game_version": ">=0.0.0-0 <2.0.0",
+  "priority": 100,
+  "dependencies": [],
+  "optional_dependencies": [],
+  "conflicts": [],
+  "description": "Makes all 151 Kanto Pokemon obtainable through natural wild encounters while preserving a vanilla-friendly experience."
+}
