@@ -1,15 +1,58 @@
 # All Pokémon Catchable 151
-## Spoiler Guide
 
-**Warning:** This document contains the locations of every Pokémon added by this mod.
+# Spoiler Guide
 
-If you'd rather discover the new encounters naturally, stop reading now!
+> **Warning:** This guide contains the locations of every major addition made by this mod.
+
+If you'd rather discover new encounters naturally, stop reading now.
+
+---
+
+## Technical Note
+
+This guide is intended for players and lists **where** Pokémon and other additions can be found.
+
+If you're interested in the exact encounter rates, encounter slots, levels, or implementation details, those are fully documented in **main.lua**. Every modified encounter table includes comments describing the intended rarity and placement.
+
+---
+
+# Gameplay Changes
+
+## Impossible Evolutions
+
+Trade evolution Pokémon can now evolve naturally through level-up.
+
+| Pokémon | Evolution |
+|----------|-----------|
+| Kadabra | Alakazam (Level 42) |
+| Graveler | Golem (Level 42) |
+| Haunter | Gengar (Level 42) |
+| Machoke | Machamp (Level 45) |
+
+Wild fully evolved Pokémon can still be encountered inside Cerulean Cave.
+
+---
+
+## Moon Stones
+
+Moon Stones are now permanently purchasable.
+
+Available from:
+
+- Pewter Mart
+- Celadon Department Store 4F
+
+---
+
+## Viridian Forest
+
+Pikachu now appears regardless of game version.
 
 ---
 
 # Version Exclusives
 
-These Pokémon are now obtainable regardless of game version.
+The following Pokémon are now obtainable regardless of game version.
 
 | Pokémon | Location |
 |----------|----------|
@@ -20,31 +63,31 @@ These Pokémon are now obtainable regardless of game version.
 | Oddish | Routes 5, 6, 7, 12–15, 24 |
 | Bellsprout | Routes 5, 6, 7, 12–15, 25 |
 | Growlithe | Route 7, Pokémon Mansion |
-| Vulpix | Route 7, Route 8 |
-| Scyther | Safari Zone Center & West |
-| Pinsir | Safari Zone Center & East |
-| Magmar | Pokémon Mansion |
+| Vulpix | Routes 7, 8 |
+| Scyther | Safari Zone Center, West |
+| Pinsir | Safari Zone Center, East |
 | Electabuzz | Power Plant |
-| Tauros | Safari Zone West & North |
-| Kangaskhan | Safari Zone East, West & North |
+| Magmar | Pokémon Mansion |
+| Tauros | Safari Zone West, North |
+| Kangaskhan | Safari Zone East, West, North |
 
 ---
 
 # Starter Pokémon
 
-The three original starters can now be found in the wild.
+The original starters can now be encountered in the wild.
 
-| Pokémon | Location | Rarity |
-|----------|----------|--------|
-| Bulbasaur | Safari Zone East | Very Rare (1%) |
-| Charmander | Victory Road 3F | Very Rare (1%) |
-| Squirtle | Seafoam Islands B2F | Very Rare (1%) |
+| Pokémon | Location |
+|----------|----------|
+| Bulbasaur | Safari Zone East |
+| Charmander | Victory Road 3F |
+| Squirtle | Seafoam Islands B2F |
 
 ---
 
 # Fossil Pokémon
 
-No longer choose only one fossil.
+Players are no longer forced to choose between fossil Pokémon.
 
 | Pokémon | Location |
 |----------|----------|
@@ -54,9 +97,9 @@ No longer choose only one fossil.
 
 ---
 
-# Trade Evolutions
+# Trade Evolution Pokémon
 
-Trade evolutions now appear in Cerulean Cave.
+Fully evolved trade Pokémon remain available as rare encounters.
 
 | Pokémon | Location |
 |----------|----------|
@@ -67,9 +110,9 @@ Trade evolutions now appear in Cerulean Cave.
 
 ---
 
-# Fighting Dojo
+# Fighting Dojo Pokémon
 
-Didn't like choosing only one?
+You no longer have to choose only one prize Pokémon.
 
 | Pokémon | Location |
 |----------|----------|
@@ -78,82 +121,82 @@ Didn't like choosing only one?
 
 ---
 
-# Secret Encounter
+# Safari Zone Highlights
 
-## Mew
-
-Location:
-
-**Pokémon Mansion B1F**
-
-Level: **10**
-
-Encounter Rate: **1%**
-
-A small tribute to the original Pokémon Mansion journals and the mystery surrounding Mew.
-
----
-
-# Rare Safari Zone Pokémon
-
-The Safari Zone now contains several Pokémon that were previously unavailable or extremely difficult to obtain.
+Three Safari Zone areas have been expanded with additional rare encounters while preserving the original feel of the Safari Zone.
 
 ## Safari Zone Center
+
+New notable encounters:
 
 - Eevee
 - Scyther
 - Pinsir
 
-## Safari Zone East
-
-- Bulbasaur
-- Kangaskhan
-- Pinsir
+---
 
 ## Safari Zone West
+
+New notable encounters:
 
 - Tauros
 - Kangaskhan
 - Scyther
 
+---
+
 ## Safari Zone North
 
-- Kangaskhan
-- Tauros
-- Chansey
+New notable encounters:
 
----
+- Tauros
+- Kangaskhan
+- Chansey
 
 # Pokémon Mansion
 
 Additional encounters include:
 
 - Growlithe
+- Ponyta
 - Magmar
+- Grimer
+- Muk
+- Weezing
 - Ditto
-
-And...
-
-- **Mew**
 
 ---
 
 # Power Plant
 
-Now always includes:
+Additional encounter:
 
 - Electabuzz
 
 ---
 
+# Secret Encounter
+
+## Mew
+
+**Location**
+
+Pokémon Mansion B1F
+
+A hidden encounter inspired by the original Pokémon Mansion journals and the mystery surrounding Mew.
+
+---
+
 # Completion Tips
 
-If you're trying to complete the Pokédex:
+If you're aiming for a complete Pokédex:
 
-- Explore the Safari Zone thoroughly—many previously unobtainable Pokémon now live there.
-- Don't skip Victory Road; it now contains several unique encounters.
-- Seafoam Islands hides more than just Ice-types.
-- Pokémon Mansion is worth revisiting even after obtaining the Secret Key.
-- Cerulean Cave now contains every trade evolution.
+- Explore every area of the Safari Zone.
+- Revisit Pokémon Mansion after obtaining the Secret Key.
+- Victory Road contains more than just the path to the Elite Four.
+- Seafoam Islands hide more than Water- and Ice-type Pokémon.
+- Cerulean Cave contains every fully evolved trade Pokémon.
+- Remember that Pikachu now appears in Viridian Forest regardless of version.
+- Buy extra Moon Stones before evolving your collection.
 
 Happy hunting!

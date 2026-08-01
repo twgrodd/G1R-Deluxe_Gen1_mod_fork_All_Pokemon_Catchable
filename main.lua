@@ -1,6 +1,99 @@
 return function(mod)
 
+
+-- Make Moon Stones purchasable at the same price as the other evolution stones
+mod.content.items:patch("MOON_STONE", {
+  price = 2100,
+})
+
+-- Add Moon Stone to Pewter Mart
+mod.content.text_pointers:patch("PewterMart", {
+  TEXT_PEWTERMART_CLERK = {
+    mart = {
+      "MOON_STONE",
+    },
+  },
+})
+
+-- Add Moon Stone to Celadon Department Store 4F
+mod.content.text_pointers:patch("CeladonMart4F", {
+  TEXT_CELADONMART4F_CLERK = {
+    mart = {
+      "MOON_STONE",
+    },
+  },
+})
+
+
+
+  mod.log:info("Impossible Evolutions")
+
+mod.content.pokemon:patch("KADABRA", {
+  evolutions = {
+    {
+      level = 42,
+      method = "LEVEL",
+      species = "ALAKAZAM",
+    },
+  },
+})
+
+mod.content.pokemon:patch("GRAVELER", {
+  evolutions = {
+    {
+      level = 42,
+      method = "LEVEL",
+      species = "GOLEM",
+    },
+  },
+})
+
+mod.content.pokemon:patch("HAUNTER", {
+  evolutions = {
+    {
+      level = 42,
+      method = "LEVEL",
+      species = "GENGAR",
+    },
+  },
+})
+
+mod.content.pokemon:patch("MACHOKE", {
+  evolutions = {
+    {
+      level = 45,
+      method = "LEVEL",
+      species = "MACHAMP",
+    },
+  },
+})
+
+
+
   mod.log:info("All Pokemon Catchable 151 loaded")
+
+mod.content.encounters:patch("VIRIDIAN_FOREST", {
+  grass = {
+    slots = {
+      { level = 3, species = "CATERPIE" },  -- 20%
+      { level = 3, species = "WEEDLE" },    -- 20%
+
+      { level = 4, species = "CATERPIE" },  -- 15%
+
+      { level = 4, species = "WEEDLE" },    -- 10%
+      { level = 5, species = "METAPOD" },   -- 10%
+      { level = 5, species = "KAKUNA" },    -- 10%
+
+      { level = 5, species = "CATERPIE" },  -- 5%
+      { level = 5, species = "WEEDLE" },    -- 5%
+
+      -- Rare version-independent encounter
+      { level = 3, species = "PIKACHU" },   -- 4%
+      { level = 5, species = "PIKACHU" },   -- 1%
+    },
+  },
+})
+
 
  mod.content.encounters:patch("ROUTE_3", {
   grass = {

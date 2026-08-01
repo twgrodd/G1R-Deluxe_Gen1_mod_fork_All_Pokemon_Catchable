@@ -1,78 +1,57 @@
 # All Pokémon Catchable 151
 
-### A Vanilla-Plus Encounter Expansion for Pokémon Gen 1 Recomp
+### A Vanilla-Plus Gameplay Expansion for Pokémon Gen 1 Recomp
 
-**Version:** v0.2.0-beta — *Mankey Edition*
+**Version:** **v0.3.0-beta — Cut the Cable Edition**
 
-*Complete the original 151 Pokémon in a single playthrough without trading, multiple game versions, or event distributions.*
+> **Complete the original 151 Pokémon in a single playthrough without trading, multiple game versions, or event-exclusive content.**
 
 ---
 
 # Overview
 
-**All Pokémon Catchable 151** is an encounter expansion mod for **Pokémon Gen 1 Recomp** that allows every original Generation I Pokémon to be legitimately obtained during normal gameplay.
-
-Rather than redesigning Kanto, this project expands the original encounter tables while preserving the progression, exploration, and atmosphere of the classic games.
+**All Pokémon Catchable 151** is a vanilla-friendly gameplay expansion for **Pokémon Gen 1 Recomp**.
 
 The goal is simple:
 
-> **Preserve the original Kanto experience while making the entire Pokédex obtainable in a single save file.**
+> **Preserve the original Kanto experience while making every original Pokémon legitimately obtainable in a single save file.**
 
-This mod removes the need for:
-
-- Trading with another player
-- Multiple game versions
-- Choosing between fossil Pokémon
-- Permanently losing starter Pokémon
-- Event-exclusive Pokémon
-
-Every new encounter has been intentionally placed in locations that feel natural within the world of Kanto.
+Rather than redesigning Kanto, this mod expands the original game's encounters and removes several artificial completion barriers while remaining faithful to the progression, exploration, and balance of Generation I.
 
 ---
 
-# Project Status
+# Highlights
 
-**Current Version**
+Version **0.3.0** introduces the final major features needed to complete the Pokédex entirely within a single playthrough.
 
-> **v0.2.0-beta — "Mankey Edition"**
+### Complete the Pokédex Without Trading
 
-The original feature set is now **complete**.
-
-Every original Pokémon can now be obtained without trading while maintaining a gameplay experience that feels faithful to the original games.
-
-During development two important Generation I mechanics were discovered:
-
-- Encounter tables contain **10 weighted encounter slots**
-- Pokémon assigned beyond slot 10 are never loaded by the game *(RIP Beta Mankey.)*
-
-Version **0.2.0** completely rebalanced encounter tables around these mechanics to better match the intended rarity of each Pokémon.
-
-Future updates will focus primarily on:
-
-- Encounter balancing
-- Bug fixes
-- Community feedback
-- Quality-of-life improvements
+- Every Generation I Pokémon can now be legitimately obtained.
+- No second cartridge required.
+- No event Pokémon required.
+- No permanent starter or fossil choices.
+- No mandatory link cable evolutions.
 
 ---
 
-# Features
+### Cut the Cable
 
-## Complete Single-Player Pokédex
+Trade evolutions now evolve naturally through level-up.
 
-The following original restrictions have been removed:
+| Pokémon | Evolution |
+|----------|-----------|
+| Kadabra | Alakazam (Lv. 42) |
+| Graveler | Golem (Lv. 42) |
+| Haunter | Gengar (Lv. 42) |
+| Machoke | Machamp (Lv. 45) |
 
-- Version Exclusives
-- Starter Choice
-- Fossil Choice
-- Trade Evolutions
-- Event Pokémon
+Players who prefer the original experience can still catch fully evolved forms inside Cerulean Cave.
 
 ---
 
-## Version Exclusives
+### Version Exclusives Restored
 
-Version-exclusive Pokémon now naturally appear throughout Kanto.
+Version-exclusive Pokémon now appear naturally throughout Kanto.
 
 Examples include:
 
@@ -86,16 +65,16 @@ Examples include:
 - Mankey
 - Scyther
 - Pinsir
-- Magmar
 - Electabuzz
+- Magmar
 - Tauros
 - Kangaskhan
 
 ---
 
-## Starter Pokémon
+### Starter Pokémon
 
-The original starters now exist as **rare wild encounters**.
+The original starters now exist as rare wild encounters.
 
 | Pokémon | Location |
 |----------|----------|
@@ -103,13 +82,11 @@ The original starters now exist as **rare wild encounters**.
 | Charmander | Victory Road 3F |
 | Squirtle | Seafoam Islands B2F |
 
-Starters remain intentionally rare discoveries.
-
 ---
 
-## Fossil Pokémon
+### Fossil Pokémon
 
-Players are no longer required to choose only one fossil.
+Both fossils can now be obtained.
 
 | Pokémon | Location |
 |----------|----------|
@@ -119,22 +96,30 @@ Players are no longer required to choose only one fossil.
 
 ---
 
-## Trade Evolutions
+### Quality of Life
 
-Trade-only evolutions have been integrated into Cerulean Cave.
+Several small vanilla-friendly improvements have also been added.
 
-| Pokémon | Location |
-|----------|----------|
-| Alakazam | Cerulean Cave 1F |
-| Machamp | Cerulean Cave 2F |
-| Gengar | Cerulean Cave B1F |
-| Golem | Cerulean Cave B1F |
+#### Moon Stones
+
+Moon Stones are now purchasable for **₽2100**.
+
+Available at:
+
+- Pewter Mart
+- Celadon Department Store 4F
+
+This prevents players from permanently running out while completing the Pokédex.
+
+#### Viridian Forest Pikachu
+
+Pikachu now appears in Viridian Forest regardless of game version, restoring one of Generation I's most iconic encounters.
 
 ---
 
-## Expanded Areas
+# Expanded Areas
 
-Encounter tables have been expanded throughout Kanto, including:
+Wild encounter tables have been expanded throughout Kanto, including:
 
 - Routes 3–25
 - Safari Zone
@@ -154,66 +139,63 @@ Pokémon Mansion has been expanded with Pokémon that fit Cinnabar Island's rese
 
 New encounters include:
 
-- Magmar
 - Growlithe
 - Ponyta
+- Magmar
 - Grimer
 - Muk
 - Weezing
 
 ### Secret Encounter
 
-Players willing to search carefully may discover something unexpected...
+Players willing to explore carefully may discover something unexpected...
 
 > **Level 10 Mew**
 
-This encounter serves as a small tribute to the original Pokémon Mansion journals and the lore surrounding Mew's discovery.
+A small tribute to the original Pokémon Mansion journals and the mystery surrounding Mew.
 
 ---
 
 ## Power Plant
 
-The Power Plant now guarantees access to **Electabuzz** regardless of game version while preserving the original electric-type ecosystem.
+Electabuzz is now available regardless of game version while preserving the original electric-type ecosystem.
 
 ---
 
 # Design Philosophy
 
-This project is intended to feel like an official "what if" version of Generation I.
+This project is intended to feel like an official "Vanilla Plus" version of Generation I.
 
 The objective is **not** to make every Pokémon common.
 
-Instead, Pokémon are placed according to:
+Instead, every addition follows a few simple principles:
 
-- Original habitat
-- Regional progression
-- Encounter rarity
-- Player exploration
-- Game balance
+- Respect original habitats.
+- Preserve game progression.
+- Keep rare Pokémon genuinely rare.
+- Reward exploration.
+- Avoid unnecessary mechanical changes.
 
-Examples include:
+Whenever possible, existing encounter tables were expanded rather than replaced.
 
-- Fossil Pokémon hidden deep within Seafoam Islands.
-- Trade evolutions appearing only inside Cerulean Cave.
-- Starter Pokémon remaining exceptionally rare.
-- Mew hidden as a secret encounter.
-- Version exclusives integrated naturally into existing habitats.
+The goal is for players to occasionally think:
 
-Whenever possible, original encounter tables were expanded rather than replaced.
+> *"I don't remember this being here... but honestly, it feels like it always should have been."*
 
 ---
 
 # Technical Information
 
-This project uses the **Pokémon Gen 1 Recomp** encounter patch API.
+This project uses Pokémon Gen 1 Recomp's Lua modding API.
 
 ```lua
 mod.content.encounters:patch()
+mod.content.pokemon:patch()
+mod.content.text_pointers:patch()
+mod.content.items:patch()
 ```
 
-Generation I encounter tables use weighted encounter slots rather than equal encounter probabilities.
-
-Approximate slot weights:
+Generation I grass encounters use ten weighted encounter slots.
 
 | Slot | Chance |
 |------|--------|
@@ -232,56 +214,69 @@ Encounter placement throughout this project was designed around these weights to
 
 ---
 
-# Known Issues
+# Project Status
 
-Although feature complete, encounter balance will continue to evolve through community feedback.
+**Current Version**
 
-If you notice anything unusual, please report:
+> **v0.3.0-beta — Cut the Cable Edition**
 
-- Pokémon appearing too frequently
-- Pokémon appearing too rarely
-- Encounter tables that feel unbalanced
-- Bugs or unexpected behavior
+The original vision of the project is now complete.
+
+Every original Generation I Pokémon can now be legitimately obtained within a single playthrough while remaining faithful to the original games.
+
+Future releases will focus on expanding optional content and polishing the experience.
 
 ---
 
 # Roadmap
 
-The original objective has been completed.
+## Planned for v0.3.1
 
-Future releases will focus on polishing the experience rather than dramatically changing it.
+Currently researching Generation I's Super Rod encounter tables.
 
-## Planned Features
+Planned additions include renewable encounters for Pokémon that were originally available only as one-time gifts, such as:
 
-### Evolution Improvements
+- Lapras
+- Other appropriate gift Pokémon
 
-Trade evolutions are currently available through wild encounters.
+These additions will be carefully balanced to remain faithful to the original game's encounter design.
 
-The long-term goal is to provide an **optional Level-Up Evolution mode** allowing Pokémon such as Kadabra, Machoke, Graveler, and Haunter to evolve naturally without trading while remaining faithful to Generation I gameplay.
+Future updates will also include:
 
-### Encounter Improvements
-
-- Continued encounter balancing
-- Community-driven adjustments
-- Minor habitat refinements
-
-### Quality of Life
-
-- Optional vanilla-friendly improvements
-- Additional compatibility with future Gen 1 Recomp releases
+- Encounter balancing
+- Community feedback
+- Bug fixes
+- Compatibility with future Gen 1 Recomp releases
 
 ---
 
 # Changelog
+
+## v0.3.0-beta — *Cut the Cable Edition*
+
+### Added
+
+- Level-up evolutions for Kadabra, Graveler, Haunter, and Machoke.
+- Purchasable Moon Stones.
+- Moon Stones added to Pewter Mart.
+- Moon Stones added to Celadon Department Store 4F.
+- Version-independent Pikachu encounters in Viridian Forest.
+
+### Improved
+
+- Removed the final mandatory link cable requirement for completing the Pokédex.
+- Continued vanilla-friendly gameplay improvements.
+
+---
 
 ## v0.2.0-beta — *Mankey Edition*
 
 ### Fixed
 
 - Rebalanced every edited encounter table using Generation I weighted encounter slots.
-- Fixed Mankey encounter rates on Routes 3 and 22.
+- Fixed Mankey encounter rates.
 - Corrected encounter tables exceeding the game's 10-slot encounter limit.
-- Improved encounter rarity across the Safari Zone, Victory Road, Seafoam Islands, Pokémon Mansion, and Cerulean Cave.
+- Improved encounter balance throughout Kanto.
 
 ### Added
 
@@ -303,8 +298,6 @@ Implemented complete encounter expansion allowing all original 151 Pokémon to b
 
 ## Mod
 
-**All Pokémon Catchable 151**
-
 Created by **Wowabox** (*Darklinkduck*)
 
 ---
@@ -319,13 +312,13 @@ Project Repository:
 
 https://github.com/bryanthaboi/gen1recomp
 
-A huge thank you to everyone who has contributed to the Gen 1 Recomp project.
+A huge thank you to everyone who has contributed to the project.
 
 ---
 
 ## Inspiration
 
-Inspired by the original encounter design of:
+Inspired by the encounter design of:
 
 - Pokémon Red
 - Pokémon Blue
@@ -340,11 +333,7 @@ Inspired by the original encounter design of:
 
 ## Community
 
-Special thanks to everyone in the Gen 1 Recomp Discord who tested beta releases, reported bugs, and provided encounter balance feedback.
-
----
-
-Designed for players who want to experience the original Kanto adventure while completing the Pokédex entirely within a single playthrough.
+Special thanks to everyone in the Gen 1 Recomp Discord who tested early builds, reported bugs, and provided balance feedback.
 
 ---
 
