@@ -2,483 +2,433 @@ return function(mod)
 
   mod.log:info("All Pokemon Catchable 151 loaded")
 
-  mod.content.encounters:patch("ROUTE_3", {
-    grass = {
-      slots = {
-        { level = 6, species = "PIDGEY" },
-        { level = 7, species = "PIDGEY" },
-        { level = 8, species = "PIDGEY" },
-
-        { level = 5, species = "SPEAROW" },
-        { level = 6, species = "SPEAROW" },
-        { level = 8, species = "SPEAROW" },
-
-        { level = 5, species = "RATTATA" },
-        { level = 8, species = "RATTATA" },
-
-        { level = 4, species = "JIGGLYPUFF" },
-
-        { level = 5, species = "MANKEY" },
-      
-      },
-    },
-  })
-
-   mod.content.encounters:patch("ROUTE_4", {
-    grass = {
-      slots = {
-        { level = 8, species = "RATTATA" },
-        { level = 9, species = "RATTATA" },
-        { level = 10, species = "RATTATA" },
-        { level = 8, species = "RATTATA" },
-
-        { level = 8, species = "SPEAROW" },
-        { level = 9, species = "SPEAROW" },
-        { level = 10, species = "SPEAROW" },
-
-        { level = 6, species = "EKANS" },
-        { level = 8, species = "EKANS" },
-
-        { level = 9, species = "MANKEY" },
-      },
-    },
-  })
-
-    mod.content.encounters:patch("ROUTE_5", {
-    grass = {
-      slots = {
-        { level = 13, species = "PIDGEY" },
-        { level = 16, species = "PIDGEY" },
-
-        { level = 10, species = "MEOWTH" },
-        { level = 10, species = "MANKEY" },
-
-        { level = 12, species = "ODDISH" },
-        { level = 12, species = "BELLSPROUT" },
-
-        { level = 11, species = "ABRA" },
-        { level = 12, species = "RATTATA" },
-        { level = 14, species = "RATTATA" },
-
-        { level = 5, species = "JIGGLYPUFF" },
-
-      },
-    },
-  })
-
-   mod.content.encounters:patch("ROUTE_6", {
-    grass = {
-      slots = {
-        { level = 13, species = "PIDGEY" },
-        { level = 16, species = "PIDGEY" },
-
-        { level = 13, species = "RATTATA" },
-        { level = 15, species = "RATTATA" },
-
-        { level = 12, species = "ODDISH" },
-        { level = 12, species = "BELLSPROUT" },
-
-        { level = 11, species = "ABRA" },
-
-        { level = 10, species = "MEOWTH" },
-        { level = 10, species = "MANKEY" },
-
-        { level = 5, species = "JIGGLYPUFF" },
-      },
-    },
-  })
-
-  mod.content.encounters:patch("ROUTE_7", {
-    grass = {
-      slots = {
-        { level = 19, species = "PIDGEY" },
-        { level = 22, species = "PIDGEY" },
-
-        { level = 17, species = "RATTATA" },
-        { level = 20, species = "RATTATA" },
-
-        { level = 18, species = "ODDISH" },
-        { level = 18, species = "BELLSPROUT" },
-
-        { level = 18, species = "MEOWTH" },
-        { level = 18, species = "MANKEY" },
-
-        { level = 19, species = "GROWLITHE" },
-        { level = 19, species = "VULPIX" },
-      },
-    },
-  })
-
-
-  mod.content.encounters:patch("ROUTE_8", {
-    grass = {
-      slots = {
-        { level = 18, species = "PIDGEY" },
-        { level = 20, species = "PIDGEY" },
-
-        { level = 18, species = "RATTATA" },
-        { level = 20, species = "RATTATA" },
-
-        { level = 17, species = "EKANS" },
-        { level = 17, species = "SANDSHREW" },
-
-        { level = 18, species = "GROWLITHE" },
-        { level = 18, species = "VULPIX" },
-
-        { level = 18, species = "MEOWTH" },
-
-        { level = 18, species = "ABRA" },
-      },
-    },
-  })
-
-
-
-  mod.content.encounters:patch("ROUTE_9", {
-    grass = {
-      slots = {
-        { level = 16, species = "RATTATA" },
-        { level = 17, species = "RATTATA" },
-        { level = 18, species = "RATTATA" },
-
-        { level = 17, species = "SPEAROW" },
-        { level = 19, species = "SPEAROW" },
-
-        { level = 16, species = "EKANS" },
-        { level = 18, species = "EKANS" },
-
-        { level = 16, species = "NIDORAN_F" },
-
-        { level = 16, species = "NIDORAN_M" },
-
-        { level = 18, species = "RATICATE" },
-      },
-    },
-  })
-
-  mod.content.encounters:patch("ROUTE_12", {
-    grass = {
-      slots = {
-        { level = 23, species = "PIDGEY" },
-        { level = 25, species = "PIDGEY" },
-
-        { level = 22, species = "VENONAT" },
-        { level = 24, species = "VENONAT" },
-
-        { level = 22, species = "ODDISH" },
-        { level = 22, species = "BELLSPROUT" },
-
-        { level = 21, species = "DROWZEE" },
-
-        { level = 22, species = "RATTATA" },
-
-        { level = 24, species = "GLOOM" },
-
-        { level = 24, species = "WEEPINBELL" },
-      },
-    },
-  })
-
- mod.content.encounters:patch("ROUTE_13", {
-    grass = {
-      slots = {
-        { level = 22, species = "VENONAT" },
-        { level = 23, species = "VENONAT" },
-        { level = 24, species = "VENONAT" },
-
-        { level = 23, species = "PIDGEY" },
-        { level = 25, species = "PIDGEY" },
-
-        { level = 23, species = "DITTO" },
-
-        { level = 22, species = "ODDISH" },
-        { level = 22, species = "BELLSPROUT" },
-
-        { level = 24, species = "GLOOM" },
-
-        { level = 25, species = "WEEPINBELL" },
-      },
-    },
-  })
-
-   mod.content.encounters:patch("ROUTE_14", {
-    grass = {
-      slots = {
-        { level = 24, species = "VENONAT" },
-        { level = 25, species = "VENONAT" },
-        { level = 26, species = "VENONAT" },
-
-        { level = 23, species = "DITTO" },
-
-        { level = 25, species = "PIDGEOTTO" },
-
-        { level = 24, species = "ODDISH" },
-        { level = 24, species = "BELLSPROUT" },
-
-        { level = 24, species = "RATTATA" },
-
-        { level = 26, species = "RATICATE" },
-
-        { level = 25, species = "DITTO" },
-      },
-    },
-  })
-
-mod.content.encounters:patch("ROUTE_15", {
-    grass = {
-      slots = {
-        { level = 26, species = "PIDGEOTTO" },
-        { level = 28, species = "PIDGEOTTO" },
-
-        { level = 25, species = "VENONAT" },
-        { level = 27, species = "VENONAT" },
-
-        { level = 23, species = "DITTO" },
-        { level = 25, species = "DITTO" },
-
-        { level = 25, species = "ODDISH" },
-        { level = 25, species = "BELLSPROUT" },
-
-        { level = 25, species = "RATICATE" },
-        { level = 27, species = "RATICATE" },
-      },
-    },
-  })
-
-  mod.content.encounters:patch("ROUTE_22", {
-    grass = {
-      slots = {
-        { level = 21, species = "RATTATA" },
-        { level = 22, species = "RATTATA" },
-        { level = 23, species = "RATTATA" },
-
-        { level = 21, species = "SPEAROW" },
-        { level = 23, species = "SPEAROW" },
-        { level = 22, species = "SPEAROW" },
-
-        { level = 21, species = "NIDORAN_F" },
-
-        { level = 21, species = "NIDORAN_M" },
-
-        { level = 22, species = "MANKEY" },
-
-        { level = 24, species = "FEAROW" },
-      },
-    },
-  })
-
- mod.content.encounters:patch("ROUTE_23", {
-    grass = {
-      slots = {
-        { level = 26, species = "SPEAROW" },
-        { level = 28, species = "SPEAROW" },
-
-        { level = 30, species = "FEAROW" },
-
-        { level = 26, species = "EKANS" },
-        { level = 28, species = "EKANS" },
-
-        { level = 28, species = "DITTO" },
-
-        { level = 26, species = "NIDORINA" },
-        { level = 28, species = "NIDORINO" },
-
-        { level = 28, species = "RHYHORN" },
-        { level = 30, species = "RHYHORN" },
-      },
-    },
-  })
-
-  mod.content.encounters:patch("ROUTE_24", {
-    grass = {
-      slots = {
-        { level = 8, species = "CATERPIE" },
-        { level = 12, species = "CATERPIE" },
-
-        { level = 10, species = "METAPOD" },
-
-        { level = 8, species = "WEEDLE" },
-        { level = 12, species = "WEEDLE" },
-
-        { level = 10, species = "KAKUNA" },
-
-        { level = 12, species = "PIDGEY" },
-        { level = 14, species = "PIDGEY" },
-
-        { level = 9, species = "ABRA" },
-
-        { level = 13, species = "ODDISH" },
-      },
-    },
-  })
-
-  mod.content.encounters:patch("ROUTE_25", {
-    grass = {
-      slots = {
-        { level = 12, species = "PIDGEY" },
-        { level = 14, species = "PIDGEY" },
-
-        { level = 12, species = "RATTATA" },
-        { level = 14, species = "RATTATA" },
-
-        { level = 10, species = "CATERPIE" },
-
-        { level = 12, species = "METAPOD" },
-
-        { level = 10, species = "WEEDLE" },
-
-        { level = 12, species = "KAKUNA" },
-
-        { level = 10, species = "ABRA" },
-
-        { level = 13, species = "ODDISH" },
-      },
-    },
-  })
-
-
-  mod.content.encounters:patch("ROUTE_22", {
-    grass = {
-      slots = {
-        { level = 3, species = "RATTATA" },
-        { level = 3, species = "NIDORAN_M" },
-        { level = 4, species = "RATTATA" },
-        { level = 4, species = "NIDORAN_M" },
-        { level = 2, species = "RATTATA" },
-        { level = 2, species = "NIDORAN_M" },
-        { level = 3, species = "SPEAROW" },
-        { level = 5, species = "SPEAROW" },
-        { level = 3, species = "NIDORAN_F" },
-        { level = 4, species = "NIDORAN_F" },
-        { level = 3, species = "MANKEY" },
-      },
-    },
-  })
-
-mod.content.encounters:patch("SAFARI_ZONE_CENTER", {
+ mod.content.encounters:patch("ROUTE_3", {
   grass = {
     slots = {
-      { level = 22, species = "NIDORAN_M" },
-      { level = 25, species = "RHYHORN" },
-      { level = 22, species = "VENONAT" },
-      { level = 24, species = "EXEGGCUTE" },
-      { level = 31, species = "NIDORINO" },
+      { level = 6, species = "PIDGEY" },      -- 20%
+      { level = 7, species = "SPEAROW" },     -- 20%
 
-      -- Rare Eevee encounter
-      { level = 23, species = "EEVEE" },
+      { level = 8, species = "PIDGEY" },      -- 15%
 
-      { level = 31, species = "NIDORINA" },
-      { level = 30, species = "PARASECT" },
-      { level = 23, species = "SCYTHER" },
-      { level = 23, species = "PINSIR" },
+      { level = 5, species = "SPEAROW" },     -- 10%
+      { level = 6, species = "RATTATA" },     -- 10%
+
+      { level = 8, species = "RATTATA" },     -- 10%
+
+      { level = 8, species = "SPEAROW" },     -- 5%
+      { level = 5, species = "MANKEY" },      -- 5%
+
+      { level = 4, species = "JIGGLYPUFF" },  -- 4%
+      { level = 5, species = "JIGGLYPUFF" },  -- 1%
     },
   },
 })
 
-  mod.content.encounters:patch("SAFARI_ZONE_EAST", {
-    grass = {
-      slots = {
-        { level = 24, species = "NIDORAN_M" },
-        { level = 26, species = "DODUO" },
-        { level = 22, species = "PARAS" },
-        { level = 25, species = "EXEGGCUTE" },
+mod.content.encounters:patch("ROUTE_4", {
+  grass = {
+    slots = {
+      { level = 8, species = "RATTATA" },   -- 20%
+      { level = 8, species = "SPEAROW" },   -- 20%
 
-        { level = 33, species = "NIDORINO" },
+      { level = 10, species = "RATTATA" },  -- 15%
 
-        { level = 25, species = "PARASECT" },
+      { level = 9, species = "SPEAROW" },   -- 10%
+      { level = 6, species = "EKANS" },     -- 10%
 
-        { level = 24, species = "NIDORAN_F" },
+      { level = 8, species = "EKANS" },     -- 10%
 
-        -- New rare Dex additions
-        { level = 23, species = "BULBASAUR" },
-        { level = 25, species = "KANGASKHAN" },
-        { level = 28, species = "PINSIR" },
-      },
+      { level = 10, species = "SPEAROW" },  -- 5%
+      { level = 8, species = "MANKEY" },    -- 5%
+      { level = 9, species = "MANKEY" },    -- 4%
+      { level = 10, species = "MANKEY" },   -- 1%
     },
-  })
+  },
+})
 
-   mod.content.encounters:patch("SAFARI_ZONE_WEST", {
-    grass = {
-      slots = {
-        { level = 25, species = "NIDORAN_M" },
-        { level = 26, species = "DODUO" },
-        { level = 23, species = "VENONAT" },
-        { level = 24, species = "EXEGGCUTE" },
+mod.content.encounters:patch("ROUTE_5", {
+  grass = {
+    slots = {
+      { level = 13, species = "PIDGEY" },      -- 20%
+      { level = 14, species = "RATTATA" },     -- 20%
 
-        { level = 33, species = "NIDORINO" },
+      { level = 10, species = "MEOWTH" },      -- 15%
 
-        { level = 31, species = "VENOMOTH" },
+      { level = 11, species = "ABRA" },        -- 10%
+      { level = 12, species = "ODDISH" },      -- 10%
+      { level = 15, species = "RATTATA" },     -- 10%
 
-        { level = 25, species = "NIDORAN_F" },
+      { level = 10, species = "MANKEY" },      -- 5%
+      { level = 12, species = "BELLSPROUT" },  -- 5%
 
-        -- New Dex addition
-        { level = 23, species = "SCYTHER" },
-
-        { level = 26, species = "TAUROS" },
-        { level = 28, species = "KANGASKHAN" },
-      },
+      { level = 5, species = "JIGGLYPUFF" },   -- 4%
+      { level = 12, species = "ABRA" },        -- 1%
     },
-  })
+  },
+})
 
-  mod.content.encounters:patch("SAFARI_ZONE_NORTH", {
-    grass = {
-      slots = {
-        { level = 22, species = "NIDORAN_M" },
-        { level = 26, species = "RHYHORN" },
-        { level = 23, species = "PARAS" },
-        { level = 25, species = "EXEGGCUTE" },
+mod.content.encounters:patch("ROUTE_6", {
+  grass = {
+    slots = {
+      { level = 13, species = "PIDGEY" },      -- 20%
+      { level = 13, species = "RATTATA" },     -- 20%
 
-        { level = 30, species = "NIDORINO" },
+      { level = 11, species = "ABRA" },        -- 15%
 
-        { level = 27, species = "EXEGGCUTE" },
+      { level = 12, species = "ODDISH" },      -- 10%
+      { level = 10, species = "MEOWTH" },      -- 10%
+      { level = 12, species = "BELLSPROUT" },  -- 10%
 
-        { level = 30, species = "NIDORINA" },
-        { level = 32, species = "VENOMOTH" },
+      { level = 10, species = "MANKEY" },      -- 5%
+      { level = 12, species = "MEOWTH" },      -- 5%
 
-        { level = 26, species = "CHANSEY" },
-        { level = 28, species = "TAUROS" },
-      },
+      { level = 5, species = "JIGGLYPUFF" },   -- 4%
+      { level = 14, species = "ODDISH" },      -- 1%
     },
-  })
+  },
+})
 
-  mod.content.encounters:patch("SEAFOAM_ISLANDS_B2F", {
-    grass = {
-      slots = {
-        { level = 30, species = "SEEL" },
-        { level = 30, species = "SLOWPOKE" },
-        { level = 32, species = "SEEL" },
-        { level = 32, species = "SLOWPOKE" },
+mod.content.encounters:patch("ROUTE_7", {
+  grass = {
+    slots = {
+      { level = 19, species = "PIDGEY" },      -- 20%
+      { level = 17, species = "RATTATA" },     -- 20%
 
-        { level = 28, species = "HORSEA" },
-        { level = 30, species = "STARYU" },
+      { level = 18, species = "ODDISH" },      -- 15%
 
-        -- Rare starter encounter
-        { level = 23, species = "SQUIRTLE" },
+      { level = 18, species = "MEOWTH" },      -- 10%
+      { level = 19, species = "GROWLITHE" },   -- 10%
+      { level = 18, species = "BELLSPROUT" },  -- 10%
 
-        { level = 28, species = "SHELLDER" },
+      { level = 18, species = "MANKEY" },      -- 5%
+      { level = 19, species = "VULPIX" },      -- 5%
 
-        { level = 30, species = "GOLBAT" },
-        { level = 37, species = "SLOWBRO" },
-      },
+      { level = 18, species = "ABRA" },        -- 4%
+      { level = 19, species = "ABRA" },        -- 1%
     },
-  })
+  },
+})
+
+
+mod.content.encounters:patch("ROUTE_8", {
+  grass = {
+    slots = {
+      { level = 18, species = "PIDGEY" },      -- 20%
+      { level = 18, species = "RATTATA" },     -- 20%
+
+      { level = 18, species = "MEOWTH" },      -- 15%
+
+      { level = 17, species = "EKANS" },       -- 10%
+      { level = 17, species = "SANDSHREW" },   -- 10%
+      { level = 19, species = "GROWLITHE" },   -- 10%
+
+      { level = 19, species = "VULPIX" },      -- 5%
+
+      { level = 17, species = "ABRA" },        -- 5%
+      { level = 18, species = "ABRA" },        -- 4%
+      { level = 19, species = "ABRA" },        -- 1%
+    },
+  },
+})
+
+
+mod.content.encounters:patch("ROUTE_9", {
+  grass = {
+    slots = {
+      { level = 16, species = "RATTATA" },    -- 20%
+      { level = 17, species = "SPEAROW" },    -- 20%
+
+      { level = 18, species = "RATTATA" },    -- 15%
+
+      { level = 16, species = "EKANS" },      -- 10%
+      { level = 16, species = "SANDSHREW" },  -- 10%
+      { level = 16, species = "NIDORAN_F" },  -- 10%
+
+      { level = 16, species = "NIDORAN_M" },  -- 5%
+      { level = 18, species = "RATICATE" },   -- 5%
+
+      { level = 18, species = "NIDORINA" },   -- 4%
+      { level = 18, species = "NIDORINO" },   -- 1%
+    },
+  },
+})
+
+mod.content.encounters:patch("ROUTE_12", {
+  grass = {
+    slots = {
+      { level = 23, species = "PIDGEY" },       -- 20%
+      { level = 22, species = "VENONAT" },      -- 20%
+
+      { level = 21, species = "DROWZEE" },      -- 15%
+
+      { level = 22, species = "ODDISH" },       -- 10%
+      { level = 22, species = "BELLSPROUT" },   -- 10%
+      { level = 21, species = "RATTATA" },      -- 10%
+
+      { level = 23, species = "RATTATA" },      -- 5%
+      { level = 24, species = "GLOOM" },        -- 5%
+
+      { level = 24, species = "WEEPINBELL" },   -- 4%
+      { level = 25, species = "WEEPINBELL" },   -- 1%
+    },
+  },
+})
+
+mod.content.encounters:patch("ROUTE_13", {
+  grass = {
+    slots = {
+      { level = 22, species = "VENONAT" },      -- 20%
+      { level = 23, species = "PIDGEY" },       -- 20%
+
+      { level = 23, species = "DITTO" },        -- 15%
+
+      { level = 22, species = "ODDISH" },       -- 10%
+      { level = 22, species = "BELLSPROUT" },   -- 10%
+      { level = 24, species = "GLOOM" },        -- 10%
+
+      { level = 24, species = "VENONAT" },      -- 5%
+      { level = 24, species = "WEEPINBELL" },   -- 5%
+
+      { level = 25, species = "WEEPINBELL" },   -- 4%
+      { level = 26, species = "WEEPINBELL" },   -- 1%
+    },
+  },
+})
+
+mod.content.encounters:patch("ROUTE_14", {
+  grass = {
+    slots = {
+      { level = 24, species = "VENONAT" },      -- 20%
+      { level = 24, species = "RATTATA" },      -- 20%
+
+      { level = 23, species = "DITTO" },        -- 15%
+
+      { level = 25, species = "PIDGEOTTO" },    -- 10%
+      { level = 24, species = "ODDISH" },       -- 10%
+      { level = 24, species = "BELLSPROUT" },   -- 10%
+
+      { level = 26, species = "VENONAT" },      -- 5%
+      { level = 26, species = "RATICATE" },     -- 5%
+
+      { level = 25, species = "RATICATE" },     -- 4%
+      { level = 26, species = "RATICATE" },     -- 1%
+    },
+  },
+})
+
+mod.content.encounters:patch("ROUTE_15", {
+  grass = {
+    slots = {
+      { level = 26, species = "PIDGEOTTO" },    -- 20%
+      { level = 25, species = "VENONAT" },      -- 20%
+
+      { level = 23, species = "DITTO" },        -- 15%
+
+      { level = 25, species = "ODDISH" },       -- 10%
+      { level = 25, species = "BELLSPROUT" },   -- 10%
+      { level = 25, species = "RATICATE" },     -- 10%
+
+      { level = 27, species = "RATICATE" },     -- 5%
+      { level = 26, species = "GLOOM" },        -- 5%
+
+      { level = 26, species = "WEEPINBELL" },   -- 4%
+      { level = 27, species = "WEEPINBELL" },   -- 1%
+    },
+  },
+})
+
+mod.content.encounters:patch("ROUTE_23", {
+  grass = {
+    slots = {
+      { level = 26, species = "SPEAROW" },     -- 20%
+      { level = 28, species = "SPEAROW" },     -- 20%
+
+      { level = 31, species = "FEAROW" },      -- 15%
+
+      { level = 26, species = "EKANS" },       -- 10%
+      { level = 26, species = "SANDSHREW" },   -- 10%
+      { level = 29, species = "DITTO" },       -- 10%
+
+      { level = 26, species = "NIDORINA" },    -- 5%
+      { level = 28, species = "NIDORINO" },    -- 5%
+
+      { level = 28, species = "RHYHORN" },     -- 4%
+      { level = 30, species = "RHYHORN" },     -- 1%
+    },
+  },
+})
+
+mod.content.encounters:patch("ROUTE_24", {
+  grass = {
+    slots = {
+      { level = 8, species = "CATERPIE" },      -- 20%
+      { level = 8, species = "WEEDLE" },        -- 20%
+
+      { level = 9, species = "ABRA" },          -- 15%
+
+      { level = 10, species = "METAPOD" },      -- 10%
+      { level = 10, species = "KAKUNA" },       -- 10%
+      { level = 12, species = "PIDGEY" },       -- 10%
+
+      { level = 13, species = "PIDGEY" },       -- 5%
+      { level = 14, species = "PIDGEY" },       -- 5%
+
+      { level = 13, species = "ODDISH" },       -- 4%
+      { level = 14, species = "BELLSPROUT" },   -- 1%
+    },
+  },
+})
+
+mod.content.encounters:patch("ROUTE_25", {
+  grass = {
+    slots = {
+      { level = 12, species = "PIDGEY" },       -- 20%
+      { level = 12, species = "RATTATA" },      -- 20%
+
+      { level = 10, species = "ABRA" },         -- 15%
+
+      { level = 10, species = "CATERPIE" },     -- 10%
+      { level = 12, species = "METAPOD" },      -- 10%
+      { level = 10, species = "WEEDLE" },       -- 10%
+
+      { level = 12, species = "KAKUNA" },       -- 5%
+      { level = 13, species = "KAKUNA" },       -- 5%
+
+      { level = 13, species = "BELLSPROUT" },   -- 4%
+      { level = 14, species = "ODDISH" },       -- 1%
+    },
+  },
+})
+
+mod.content.encounters:patch("ROUTE_22", {
+  grass = {
+    slots = {
+      { level = 3, species = "RATTATA" },    -- 20%
+      { level = 4, species = "RATTATA" },    -- 20%
+      { level = 2, species = "RATTATA" },    -- 15%
+
+      { level = 3, species = "SPEAROW" },    -- 10%
+      { level = 5, species = "SPEAROW" },    -- 10%
+
+      { level = 3, species = "MANKEY" },     -- 10%
+
+      { level = 3, species = "NIDORAN_M" },  -- 5%
+      { level = 3, species = "NIDORAN_F" },  -- 5%
+      { level = 4, species = "SPEAROW" },    -- 4%
+
+      { level = 4, species = "NIDORAN_M" },  -- 1%
+    },
+  },
+})
+
+mod.content.encounters:patch("SAFARI_ZONE_CENTER", {
+  grass = {
+    slots = {
+      { level = 22, species = "NIDORAN_M" },  -- 20%
+      { level = 25, species = "RHYHORN" },    -- 20%
+
+      { level = 22, species = "VENONAT" },    -- 15%
+
+      { level = 24, species = "EXEGGCUTE" },  -- 10%
+      { level = 31, species = "NIDORINO" },   -- 10%
+
+      -- Rare Eevee encounter
+      { level = 23, species = "EEVEE" },       -- 10%
+
+      { level = 31, species = "NIDORINA" },   -- 5%
+      { level = 30, species = "PARASECT" },   -- 5%
+
+      { level = 23, species = "SCYTHER" },     -- 4%
+      { level = 23, species = "PINSIR" },      -- 1%
+    },
+  },
+})
+
+
+
+mod.content.encounters:patch("SAFARI_ZONE_WEST", {
+  grass = {
+    slots = {
+      { level = 25, species = "NIDORAN_M" },   -- 20%
+      { level = 26, species = "DODUO" },       -- 20%
+
+      { level = 23, species = "VENONAT" },     -- 15%
+
+      { level = 24, species = "EXEGGCUTE" },   -- 10%
+      { level = 33, species = "NIDORINO" },    -- 10%
+      { level = 31, species = "VENOMOTH" },    -- 10%
+
+      { level = 25, species = "NIDORAN_F" },   -- 5%
+      { level = 26, species = "TAUROS" },      -- 5%
+
+      -- Rare Safari encounters
+      { level = 23, species = "SCYTHER" },     -- 4%
+      { level = 28, species = "KANGASKHAN" },  -- 1%
+    },
+  },
+})
+
+
+mod.content.encounters:patch("SAFARI_ZONE_NORTH", {
+  grass = {
+    slots = {
+      { level = 22, species = "NIDORAN_M" },   -- 20%
+      { level = 26, species = "RHYHORN" },     -- 20%
+
+      { level = 23, species = "PARAS" },       -- 15%
+
+      { level = 25, species = "EXEGGCUTE" },   -- 10%
+      { level = 30, species = "NIDORINO" },    -- 10%
+      { level = 27, species = "EXEGGCUTE" },   -- 10%
+
+      { level = 32, species = "VENOMOTH" },    -- 5%
+      { level = 25, species = "KANGASKHAN" },  -- 5%
+
+      { level = 28, species = "TAUROS" },      -- 4%
+      { level = 26, species = "CHANSEY" },     -- 1%
+    },
+  },
+})
+
+mod.content.encounters:patch("SEAFOAM_ISLANDS_B2F", {
+  grass = {
+    slots = {
+      { level = 30, species = "SEEL" },       -- 20%
+      { level = 30, species = "SLOWPOKE" },   -- 20%
+
+      { level = 32, species = "SEEL" },       -- 15%
+
+      { level = 32, species = "SLOWPOKE" },   -- 10%
+      { level = 28, species = "HORSEA" },     -- 10%
+      { level = 30, species = "STARYU" },     -- 10%
+
+      { level = 37, species = "SLOWBRO" },    -- 5%
+      { level = 28, species = "SHELLDER" },   -- 5%
+
+      { level = 30, species = "GOLBAT" },     -- 4%
+
+      -- Rare starter encounter
+      { level = 23, species = "SQUIRTLE" },   -- 1%
+    },
+  },
+})
 
 mod.content.encounters:patch("SEAFOAM_ISLANDS_B4F", {
   grass = {
     slots = {
-      { level = 31, species = "HORSEA" },
-      { level = 31, species = "SHELLDER" },
-      { level = 33, species = "HORSEA" },
-      { level = 33, species = "SHELLDER" },
+      { level = 31, species = "HORSEA" },      -- 20%
+      { level = 31, species = "SHELLDER" },    -- 20%
 
-      { level = 29, species = "SLOWPOKE" },
-      { level = 31, species = "SEEL" },
+      { level = 33, species = "HORSEA" },      -- 15%
 
-      { level = 31, species = "SLOWPOKE" },
-      { level = 29, species = "SEEL" },
+      { level = 33, species = "SHELLDER" },    -- 10%
+      { level = 29, species = "SLOWPOKE" },    -- 10%
+      { level = 31, species = "SEEL" },        -- 10%
 
-      { level = 35, species = "OMANYTE" }, -- rare fossil encounter
-      { level = 35, species = "KABUTO" }, -- rare fossil encounter
+      { level = 31, species = "SLOWPOKE" },    -- 5%
+      { level = 35, species = "OMANYTE" },     -- 5%
+
+      { level = 35, species = "KABUTO" },      -- 4%
+      { level = 35, species = "KABUTO" },      -- 1%
     },
   },
 })
@@ -486,19 +436,22 @@ mod.content.encounters:patch("SEAFOAM_ISLANDS_B4F", {
 mod.content.encounters:patch("VICTORY_ROAD_1F", {
   grass = {
     slots = {
-      { level = 42, species = "HITMONLEE" },
-      { level = 26, species = "GEODUDE" },
-      { level = 22, species = "ZUBAT" },
+      { level = 43, species = "MAROWAK" },     -- 20%
+      { level = 26, species = "GEODUDE" },     -- 20%
 
-      { level = 36, species = "ONIX" },
-      { level = 39, species = "ONIX" },
-      { level = 42, species = "ONIX" },
+      { level = 22, species = "ZUBAT" },       -- 15%
 
-      { level = 41, species = "GRAVELER" },
-      { level = 41, species = "GOLBAT" },
+      { level = 36, species = "ONIX" },        -- 10%
+      { level = 39, species = "ONIX" },        -- 10%
+      { level = 42, species = "ONIX" },        -- 10%
 
-      { level = 42, species = "MACHOKE" },
-      { level = 43, species = "MAROWAK" },
+      { level = 41, species = "GRAVELER" },    -- 5%
+      { level = 41, species = "GOLBAT" },      -- 5%
+
+      { level = 42, species = "MACHOKE" },     -- 4%
+
+      -- Rare alternate Fighting Dojo reward
+      { level = 42, species = "HITMONLEE" },   -- 1%
     },
   },
 })
@@ -506,18 +459,22 @@ mod.content.encounters:patch("VICTORY_ROAD_1F", {
 mod.content.encounters:patch("VICTORY_ROAD_2F", {
   grass = {
     slots = {
-      { level = 42, species = "HITMONCHAN" },
-      { level = 24, species = "GEODUDE" },
-      { level = 26, species = "ZUBAT" },
+      { level = 22, species = "MACHOP" },      -- 20%
+      { level = 24, species = "GEODUDE" },     -- 20%
 
-      { level = 36, species = "ONIX" },
-      { level = 39, species = "ONIX" },
-      { level = 42, species = "ONIX" },
+      { level = 26, species = "ZUBAT" },       -- 15%
 
-      { level = 41, species = "MACHOKE" },
-      { level = 40, species = "GOLBAT" },
-      { level = 40, species = "MAROWAK" },
-      { level = 43, species = "GRAVELER" },
+      { level = 36, species = "ONIX" },        -- 10%
+      { level = 39, species = "ONIX" },        -- 10%
+      { level = 42, species = "ONIX" },        -- 10%
+
+      { level = 41, species = "MACHOKE" },     -- 5%
+      { level = 40, species = "GOLBAT" },      -- 5%
+
+      { level = 40, species = "MAROWAK" },     -- 4%
+
+      -- Rare alternate Fighting Dojo reward
+      { level = 42, species = "HITMONCHAN" },  -- 1%
     },
   },
 })
@@ -525,38 +482,47 @@ mod.content.encounters:patch("VICTORY_ROAD_2F", {
 mod.content.encounters:patch("VICTORY_ROAD_3F", {
   grass = {
     slots = {
-      { level = 24, species = "MACHOP" },
-      { level = 26, species = "GEODUDE" },
-      { level = 22, species = "ZUBAT" },
+      { level = 24, species = "MACHOP" },       -- 20%
+      { level = 26, species = "GEODUDE" },      -- 20%
 
-      { level = 40, species = "VENOMOTH" },
-      { level = 45, species = "ONIX" },
+      { level = 22, species = "ZUBAT" },        -- 15%
 
-      { level = 43, species = "GRAVELER" },
-      { level = 41, species = "GOLBAT" },
+      { level = 40, species = "VENOMOTH" },     -- 10%
+      { level = 45, species = "ONIX" },         -- 10%
+      { level = 43, species = "GRAVELER" },     -- 10%
 
-      { level = 42, species = "MACHOKE" },
+      { level = 41, species = "GOLBAT" },       -- 5%
+      { level = 42, species = "MACHOKE" },      -- 5%
 
-      -- Rare additions
-      { level = 23, species = "CHARMANDER" },
-      { level = 45, species = "AERODACTYL" },
+      -- Rare fossil encounter
+      { level = 45, species = "AERODACTYL" },   -- 4%
+
+      -- Very rare starter encounter
+      { level = 23, species = "CHARMANDER" },   -- 1%
     },
   },
 })
 
- mod.content.encounters:patch("POKEMON_MANSION_B1F", {
+mod.content.encounters:patch("POKEMON_MANSION_B1F", {
   grass = {
     slots = {
-      { level = 33, species = "KOFFING" },
-      { level = 10, species = "MEW" }, -- secret rare encounter
-      { level = 35, species = "GROWLITHE" },
-      { level = 32, species = "PONYTA" },
-      { level = 35, species = "MAGMAR" }, -- version exclusive added
-      { level = 40, species = "WEEZING" },
-      { level = 34, species = "PONYTA" },
-      { level = 35, species = "GRIMER" },
-      { level = 42, species = "WEEZING" },
-      { level = 42, species = "MUK" },
+      { level = 31, species = "KOFFING" },    -- 20%
+      { level = 31, species = "GRIMER" },     -- 20%
+
+      { level = 32, species = "RATICATE" },   -- 15%
+
+      { level = 31, species = "DITTO" },      -- 10%
+      { level = 30, species = "GROWLITHE" },  -- 10%
+      { level = 30, species = "RATTATA" },    -- 10%
+
+      { level = 33, species = "KOFFING" },    -- 5%
+      { level = 32, species = "GRIMER" },     -- 5%
+
+      -- Rare version-exclusive encounter
+      { level = 35, species = "MAGMAR" },     -- 4%
+
+      -- Secret mythical encounter
+      { level = 10, species = "MEW" },        -- 1%
     },
   },
 })
@@ -566,19 +532,22 @@ mod.content.encounters:patch("CERULEAN_CAVE_1F", {
   grass = {
     rate = 10,
     slots = {
-      { level = 46, species = "GOLBAT" },
-      { level = 46, species = "HYPNO" },
-      { level = 46, species = "MAGNETON" },
-      { level = 49, species = "DODRIO" },
-      { level = 49, species = "VENOMOTH" },
-      { level = 52, species = "ARBOK" },
+      { level = 46, species = "GOLBAT" },      -- 20%
+      { level = 46, species = "HYPNO" },       -- 20%
+
+      { level = 46, species = "MAGNETON" },    -- 15%
+
+      { level = 49, species = "DODRIO" },      -- 10%
+      { level = 49, species = "VENOMOTH" },    -- 10%
+      { level = 52, species = "ARBOK" },       -- 10%
 
       -- Trade evolution addition
-      { level = 49, species = "ALAKAZAM" },
+      { level = 49, species = "ALAKAZAM" },    -- 5%
 
-      { level = 52, species = "PARASECT" },
-      { level = 53, species = "RAICHU" },
-      { level = 53, species = "DITTO" },
+      { level = 52, species = "PARASECT" },    -- 5%
+
+      { level = 53, species = "RAICHU" },      -- 4%
+      { level = 53, species = "DITTO" },       -- 1%
     },
   },
 })
@@ -587,18 +556,22 @@ mod.content.encounters:patch("CERULEAN_CAVE_2F", {
   grass = {
     rate = 15,
     slots = {
-      { level = 51, species = "DODRIO" },
-      { level = 51, species = "VENOMOTH" },
-      { level = 51, species = "KADABRA" },
-      { level = 52, species = "RHYDON" },
-      { level = 52, species = "MAROWAK" },
-      { level = 52, species = "ELECTRODE" },
-      { level = 56, species = "CHANSEY" },
-      { level = 54, species = "WIGGLYTUFF" },
-      { level = 55, species = "DITTO" },
+      { level = 51, species = "DODRIO" },      -- 20%
+      { level = 51, species = "VENOMOTH" },    -- 20%
+
+      { level = 51, species = "KADABRA" },     -- 15%
+
+      { level = 52, species = "RHYDON" },      -- 10%
+      { level = 52, species = "MAROWAK" },     -- 10%
+      { level = 52, species = "ELECTRODE" },   -- 10%
+
+      { level = 56, species = "CHANSEY" },     -- 5%
+      { level = 54, species = "WIGGLYTUFF" },  -- 5%
 
       -- Trade evolution addition
-      { level = 55, species = "MACHAMP" },
+      { level = 55, species = "MACHAMP" },     -- 4%
+
+      { level = 60, species = "DITTO" },       -- 1%
     },
   },
 })
@@ -607,19 +580,22 @@ mod.content.encounters:patch("CERULEAN_CAVE_B1F", {
   grass = {
     rate = 25,
     slots = {
-      { level = 55, species = "RHYDON" },
-      { level = 55, species = "MAROWAK" },
-      { level = 55, species = "ELECTRODE" },
-      { level = 64, species = "CHANSEY" },
-      { level = 64, species = "PARASECT" },
-      { level = 64, species = "RAICHU" },
-      { level = 57, species = "ARBOK" },
+      { level = 55, species = "RHYDON" },      -- 20%
+      { level = 55, species = "MAROWAK" },     -- 20%
+
+      { level = 55, species = "ELECTRODE" },   -- 15%
+
+      { level = 64, species = "CHANSEY" },     -- 10%
+      { level = 64, species = "PARASECT" },    -- 10%
+      { level = 64, species = "RAICHU" },      -- 10%
+
+      { level = 57, species = "ARBOK" },       -- 5%
 
       -- Trade evolution additions
-      { level = 57, species = "GENGAR" },
-      { level = 57, species = "GOLEM" },
+      { level = 57, species = "GENGAR" },      -- 5%
+      { level = 57, species = "GOLEM" },       -- 4%
 
-      { level = 67, species = "DITTO" },
+      { level = 67, species = "DITTO" },       -- 1%
     },
   },
 })
@@ -645,4 +621,5 @@ mod.content.encounters:patch("POWER_PLANT", {
   },
 })
 
-end -- mod entry
+end 
+-- mod entry

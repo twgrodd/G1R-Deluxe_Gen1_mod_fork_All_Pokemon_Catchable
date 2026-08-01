@@ -1,231 +1,355 @@
-All Pokémon Catchable 151 - Gen 1 Kanto Encounter Expansion Mod
-Version v0.1.0-beta - Early Public Test Release
-Overview
+# All Pokémon Catchable 151
 
-All Pokémon Catchable 151 is a Pokémon Generation 1 encounter expansion mod designed to make the complete original Kanto Pokédex obtainable on a single save file.
+### A Vanilla-Plus Encounter Expansion for Pokémon Gen 1 Recomp
 
-This is the first public testing release.
+**Version:** v0.2.0-beta — *Mankey Edition*
 
-The goal of this project is to expand Pokémon Red, Blue, Green, and Yellow style Kanto gameplay by allowing players to obtain all original 151 Pokémon without requiring:
+*Complete the original 151 Pokémon in a single playthrough without trading, multiple game versions, or event distributions.*
 
-Trading with another player
-Multiple game versions
-Choosing between fossil Pokémon
-Selecting only one starter
-Event distributions
+---
 
-The mod expands wild encounter tables throughout Kanto while attempting to preserve the original progression, locations, and feeling of the region.
+# Overview
 
-Current Status
+**All Pokémon Catchable 151** is an encounter expansion mod for **Pokémon Gen 1 Recomp** that allows every original Generation I Pokémon to be legitimately obtained during normal gameplay.
 
-This project is currently an early development release (0.0.1).
+Rather than redesigning Kanto, this project expands the original encounter tables while preserving the progression, exploration, and atmosphere of the classic games.
 
-The encounter locations and Pokémon additions are implemented, but encounter balance is still being refined.
+The goal is simple:
 
-Gen 1 Pokémon encounters use weighted encounter slots rather than equal probability encounters. Because of this, Pokémon placed in later encounter slots may be significantly rarer than expected.
+> **Preserve the original Kanto experience while making the entire Pokédex obtainable in a single save file.**
 
-Future updates will focus on:
+This mod removes the need for:
 
-Adjusting encounter rarity
-Improving progression balance
-Refining rare Pokémon placement
-Community feedback testing
-Features
-Complete Kanto Pokédex Completion
+- Trading with another player
+- Multiple game versions
+- Choosing between fossil Pokémon
+- Permanently losing starter Pokémon
+- Event-exclusive Pokémon
 
-This mod allows players to obtain all original 151 Pokémon through normal gameplay.
+Every new encounter has been intentionally placed in locations that feel natural within the world of Kanto.
 
-The following restrictions have been addressed:
+---
 
-Version Exclusives
+# Project Status
 
-Pokémon originally locked behind Red, Blue, Green, or Yellow version differences are now available.
+**Current Version**
+
+> **v0.2.0-beta — "Mankey Edition"**
+
+The original feature set is now **complete**.
+
+Every original Pokémon can now be obtained without trading while maintaining a gameplay experience that feels faithful to the original games.
+
+During development two important Generation I mechanics were discovered:
+
+- Encounter tables contain **10 weighted encounter slots**
+- Pokémon assigned beyond slot 10 are never loaded by the game *(RIP Beta Mankey.)*
+
+Version **0.2.0** completely rebalanced encounter tables around these mechanics to better match the intended rarity of each Pokémon.
+
+Future updates will focus primarily on:
+
+- Encounter balancing
+- Bug fixes
+- Community feedback
+- Quality-of-life improvements
+
+---
+
+# Features
+
+## Complete Single-Player Pokédex
+
+The following original restrictions have been removed:
+
+- Version Exclusives
+- Starter Choice
+- Fossil Choice
+- Trade Evolutions
+- Event Pokémon
+
+---
+
+## Version Exclusives
+
+Version-exclusive Pokémon now naturally appear throughout Kanto.
 
 Examples include:
 
-Ekans
-Sandshrew
-Oddish
-Bellsprout
-Growlithe
-Vulpix
-Meowth
-Mankey
-Scyther
-Pinsir
-Magmar
-Tauros
-Kangaskhan
-Starter Pokémon Availability
+- Ekans
+- Sandshrew
+- Oddish
+- Bellsprout
+- Growlithe
+- Vulpix
+- Meowth
+- Mankey
+- Scyther
+- Pinsir
+- Magmar
+- Electabuzz
+- Tauros
+- Kangaskhan
 
-The three original starters have been added as rare wild encounters:
+---
 
-Bulbasaur
-Charmander
-Squirtle
+## Starter Pokémon
 
-Current locations:
+The original starters now exist as **rare wild encounters**.
 
-Bulbasaur → Safari Zone East
-Charmander → Victory Road 3F
-Squirtle → Seafoam Islands
+| Pokémon | Location |
+|----------|----------|
+| Bulbasaur | Safari Zone East |
+| Charmander | Victory Road 3F |
+| Squirtle | Seafoam Islands B2F |
 
-Starters are intentionally placed as rare discoveries rather than common encounters.
+Starters remain intentionally rare discoveries.
 
-Fossil Pokémon Availability
+---
 
-All fossil Pokémon can now be obtained without choosing only one fossil.
+## Fossil Pokémon
 
-Added:
+Players are no longer required to choose only one fossil.
 
-Omanyte
-Kabuto
-Aerodactyl
+| Pokémon | Location |
+|----------|----------|
+| Omanyte | Seafoam Islands B4F |
+| Kabuto | Seafoam Islands B4F |
+| Aerodactyl | Victory Road 3F |
 
-Locations:
+---
 
-Omanyte → Seafoam Islands B4F
-Kabuto → Seafoam Islands B4F
-Aerodactyl → Victory Road 3F
-Trade Evolution Availability
+## Trade Evolutions
 
-Trade-only evolutions are now obtainable without link cable trading.
+Trade-only evolutions have been integrated into Cerulean Cave.
 
-Added to Cerulean Cave:
+| Pokémon | Location |
+|----------|----------|
+| Alakazam | Cerulean Cave 1F |
+| Machamp | Cerulean Cave 2F |
+| Gengar | Cerulean Cave B1F |
+| Golem | Cerulean Cave B1F |
 
-Alakazam
-Machamp
-Gengar
-Golem
+---
 
-Locations:
+## Expanded Areas
 
-Alakazam → Cerulean Cave 1F
-Machamp → Cerulean Cave 2F
-Gengar → Cerulean Cave B1F
-Golem → Cerulean Cave B1F
-Major Encounter Expansions
+Encounter tables have been expanded throughout Kanto, including:
 
-Expanded locations include:
+- Routes 3–25
+- Safari Zone
+- Seafoam Islands
+- Victory Road
+- Pokémon Mansion
+- Cerulean Cave
+- Power Plant
 
-Routes 3-25
-Safari Zone
-Seafoam Islands
-Victory Road
-Pokémon Mansion
-Cerulean Cave
-Power Plant
-Special Additions
-Pokémon Mansion
+---
 
-The Pokémon Mansion has been expanded to include Pokémon connected to Cinnabar Island research.
+# Special Additions
 
-Added:
+## Pokémon Mansion
 
-Growlithe
-Ponyta
-Magmar
-Grimer
-Muk
-Weezing
+Pokémon Mansion has been expanded with Pokémon that fit Cinnabar Island's research history.
 
-A secret encounter has also been added:
+New encounters include:
 
-Mew
-Level 10
+- Magmar
+- Growlithe
+- Ponyta
+- Grimer
+- Muk
+- Weezing
 
-This references the original Pokémon Mansion journals and Mew research.
+### Secret Encounter
 
-Power Plant
+Players willing to search carefully may discover something unexpected...
 
-Expanded Electric-type encounters:
+> **Level 10 Mew**
 
-Added:
+This encounter serves as a small tribute to the original Pokémon Mansion journals and the lore surrounding Mew's discovery.
 
-Electabuzz
+---
 
-Expanded:
+## Power Plant
 
-Pikachu
-Magnemite
-Voltorb
-Magneton
-Design Philosophy
+The Power Plant now guarantees access to **Electabuzz** regardless of game version while preserving the original electric-type ecosystem.
 
-The goal of this project is not to place every Pokémon everywhere.
+---
 
-Pokémon are placed based on:
+# Design Philosophy
 
-Original habitat themes
-Region progression
-Type locations
-Rarity
-Player discovery
+This project is intended to feel like an official "what if" version of Generation I.
 
-Examples:
+The objective is **not** to make every Pokémon common.
 
-Water Pokémon remain concentrated near aquatic areas.
-Fossils appear in caves and research-related locations.
-Electric Pokémon appear near the Power Plant.
-Rare Pokémon are reserved for later areas.
-Starters are treated as special discoveries.
-Technical Information
+Instead, Pokémon are placed according to:
 
-This mod uses the encounter patch system:
+- Original habitat
+- Regional progression
+- Encounter rarity
+- Player exploration
+- Game balance
 
+Examples include:
+
+- Fossil Pokémon hidden deep within Seafoam Islands.
+- Trade evolutions appearing only inside Cerulean Cave.
+- Starter Pokémon remaining exceptionally rare.
+- Mew hidden as a secret encounter.
+- Version exclusives integrated naturally into existing habitats.
+
+Whenever possible, original encounter tables were expanded rather than replaced.
+
+---
+
+# Technical Information
+
+This project uses the **Pokémon Gen 1 Recomp** encounter patch API.
+
+```lua
 mod.content.encounters:patch()
+```
 
-Encounter entries use weighted Gen 1 style encounter slots:
+Generation I encounter tables use weighted encounter slots rather than equal encounter probabilities.
 
-{
-  level = 25,
-  species = "POKEMON"
-}
+Approximate slot weights:
 
-Important:
+| Slot | Chance |
+|------|--------|
+| 1 | 20% |
+| 2 | 20% |
+| 3 | 15% |
+| 4 | 10% |
+| 5 | 10% |
+| 6 | 10% |
+| 7 | 5% |
+| 8 | 5% |
+| 9 | 4% |
+| 10 | 1% |
 
-Gen 1 encounter tables do not use equal probability per entry.
+Encounter placement throughout this project was designed around these weights to preserve intended rarity.
 
-Encounter slots have different built-in weights, meaning:
+---
 
-Early slots = common encounters
-Middle slots = uncommon encounters
-Later slots = rare encounters
+# Known Issues
 
-Because of this, encounter balance is still being tested and adjusted.
+Although feature complete, encounter balance will continue to evolve through community feedback.
 
-Known Issues
+If you notice anything unusual, please report:
 
-Current known issues:
+- Pokémon appearing too frequently
+- Pokémon appearing too rarely
+- Encounter tables that feel unbalanced
+- Bugs or unexpected behavior
 
-Some rare Pokémon may be too uncommon or too common.
-Encounter rates need additional balancing.
-Community testing is needed to refine rarity.
+---
 
-Please report:
+# Roadmap
 
-Pokémon found too frequently
-Pokémon that are too difficult to encounter
-Locations that feel unbalanced
-Credits
+The original objective has been completed.
 
-Created as a Gen 1 Kanto encounter expansion project.
+Future releases will focus on polishing the experience rather than dramatically changing it.
 
-Inspired by:
+## Planned Features
 
-Pokémon Red
-Pokémon Blue
-Pokémon Yellow
-Pokémon Green
+### Evolution Improvements
 
-Designed for players who want the classic Kanto experience with a complete single-player Pokédex journey.
+Trade evolutions are currently available through wild encounters.
 
-Version
+The long-term goal is to provide an **optional Level-Up Evolution mode** allowing Pokémon such as Kadabra, Machoke, Graveler, and Haunter to evolve naturally without trading while remaining faithful to Generation I gameplay.
 
-Current Version:
+### Encounter Improvements
 
-v0.1.0-beta - Early Public Test Release
+- Continued encounter balancing
+- Community-driven adjustments
+- Minor habitat refinements
 
-Goal:
+### Quality of Life
 
-Allow players to catch all 151 original Pokémon without trading, multiple versions, or event distributions.
+- Optional vanilla-friendly improvements
+- Additional compatibility with future Gen 1 Recomp releases
+
+---
+
+# Changelog
+
+## v0.2.0-beta — *Mankey Edition*
+
+### Fixed
+
+- Rebalanced every edited encounter table using Generation I weighted encounter slots.
+- Fixed Mankey encounter rates on Routes 3 and 22.
+- Corrected encounter tables exceeding the game's 10-slot encounter limit.
+- Improved encounter rarity across the Safari Zone, Victory Road, Seafoam Islands, Pokémon Mansion, and Cerulean Cave.
+
+### Added
+
+- MIT License
+- Project documentation
+- Public changelog
+
+---
+
+## v0.1.0-beta
+
+Initial public beta release.
+
+Implemented complete encounter expansion allowing all original 151 Pokémon to be obtained in a single playthrough.
+
+---
+
+# Credits
+
+## Mod
+
+**All Pokémon Catchable 151**
+
+Created by **Wowabox** (*Darklinkduck*)
+
+---
+
+## Built On
+
+This project is built for **Pokémon Gen 1 Recomp**, created and maintained by **Bryanthaboi** and contributors.
+
+Gen 1 Recomp provides the native PC runtime, decompilation framework, and Lua modding API that made this project possible.
+
+Project Repository:
+
+https://github.com/bryanthaboi/gen1recomp
+
+A huge thank you to everyone who has contributed to the Gen 1 Recomp project.
+
+---
+
+## Inspiration
+
+Inspired by the original encounter design of:
+
+- Pokémon Red
+- Pokémon Blue
+- Pokémon Green
+- Pokémon Yellow
+- Pokémon FireRed
+- Pokémon LeafGreen
+- Pokémon Let's Go Pikachu
+- Pokémon Let's Go Eevee
+
+---
+
+## Community
+
+Special thanks to everyone in the Gen 1 Recomp Discord who tested beta releases, reported bugs, and provided encounter balance feedback.
+
+---
+
+Designed for players who want to experience the original Kanto adventure while completing the Pokédex entirely within a single playthrough.
+
+---
+
+# License
+
+Licensed under the **MIT License**.
+
+See the included **LICENSE** file for details.
