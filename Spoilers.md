@@ -123,31 +123,35 @@ You no longer have to choose only one prize Pokémon.
 
 # Safari Zone Highlights
 
-Three Safari Zone areas have been expanded with additional rare encounters while preserving the original feel of the Safari Zone.
+The Safari Zone has been expanded with additional rare encounters while preserving the original feel of Generation I.
 
 ## Safari Zone Center
 
-New notable encounters:
+Notable additions:
 
 - Eevee
 - Scyther
 - Pinsir
 
----
+## Safari Zone East
+
+Notable additions:
+
+- Bulbasaur
+- Pinsir
+- Kangaskhan
 
 ## Safari Zone West
 
-New notable encounters:
+Notable additions:
 
 - Tauros
 - Kangaskhan
 - Scyther
 
----
-
 ## Safari Zone North
 
-New notable encounters:
+Notable additions:
 
 - Tauros
 - Kangaskhan
@@ -197,6 +201,6 @@ If you're aiming for a complete Pokédex:
 - Seafoam Islands hide more than Water- and Ice-type Pokémon.
 - Cerulean Cave contains every fully evolved trade Pokémon.
 - Remember that Pikachu now appears in Viridian Forest regardless of version.
-- Buy extra Moon Stones before evolving your collection.
+- Stock up on Moon Stones before evolving Nidorina, Nidorino, Clefairy, and Jigglypuff.
 
 Happy hunting!

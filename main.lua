@@ -436,7 +436,29 @@ mod.content.encounters:patch("SAFARI_ZONE_CENTER", {
   },
 })
 
+mod.content.encounters:patch("SAFARI_ZONE_EAST", {
+  grass = {
+    slots = {
+      { level = 22, species = "NIDORAN_F" },   -- 20%
+      { level = 22, species = "NIDORAN_M" },   -- 20%
 
+      { level = 24, species = "EXEGGCUTE" },   -- 15%
+
+      { level = 26, species = "RHYHORN" },     -- 10%
+      { level = 23, species = "PARAS" },       -- 10%
+      { level = 25, species = "EXEGGCUTE" },   -- 10%
+
+      { level = 25, species = "TAUROS" },      -- 5%
+      { level = 25, species = "KANGASKHAN" },  -- 5%
+
+      -- Rare version-independent encounter
+      { level = 23, species = "PINSIR" },       -- 4%
+
+      -- Very rare starter encounter
+      { level = 23, species = "BULBASAUR" },    -- 1%
+    },
+  },
+})
 
 mod.content.encounters:patch("SAFARI_ZONE_WEST", {
   grass = {

@@ -6,6 +6,25 @@ This project follows Semantic Versioning during beta development.
 
 ---
 
+# [0.3.1-beta] - 2026-08-02
+
+## Bulbasaur Edition
+
+> *Remembered Safari Zone East exist.*
+
+### Fixed
+
+- Restored Bulbasaur's intended **1%** encounter in Safari Zone East.
+- Corrected a regression introduced during the Safari Zone encounter rebalance.
+
+### Developer Notes
+
+Turns out the rarest Pokémon in Kanto wasn't Mew...
+
+...it was the missing encounter in the Safari East table.
+
+---
+
 # [0.3.0-beta] - 2026-08-01
 
 ## Cut the Cable Edition
