@@ -6,6 +6,42 @@ This project follows Semantic Versioning during beta development.
 
 ---
 
+# [0.3.2-beta] - 2026-08-02
+
+## Yellow Support Hotfix
+
+> *The release that discovered Yellow had five more ways to ruin Pokédex completion.*
+
+### Added
+
+- Added Tangela to Route 21.
+- Added Farfetch'd to Route 13 using its Pokémon Yellow location as inspiration.
+- Added Mr. Mime to Route 11 using its Pokémon Let's Go location as inspiration.
+- Added Jynx to Seafoam Islands B3F.
+- Added Lickitung to Cerulean Cave B1F using its Pokémon Yellow location.
+
+### Improved
+
+- Expanded compatibility with Pokémon Yellow encounter data.
+- Restored renewable access to Pokémon otherwise limited to NPC trades or one-time encounters.
+- Continued merging official Kanto encounter ideas across Red, Blue, Green, Yellow, FireRed, LeafGreen, Let's Go Pikachu, and Let's Go Eevee.
+
+### Developer Notes
+
+Pokémon Yellow changed enough encounter availability that several Pokémon were still missing from a fully renewable single-player Pokédex.
+
+This hotfix places them using official Kanto precedent wherever possible:
+
+- Tangela — Route 21
+- Farfetch'd — Route 13
+- Mr. Mime — Route 11
+- Jynx — Seafoam Islands B3F
+- Lickitung — Cerulean Cave B1F
+
+Yellow players should now have full support without relying on NPC trades or one-time Pokémon.
+
+---
+
 # [0.3.1-beta] - 2026-08-02
 
 ## Bulbasaur Edition

@@ -2,7 +2,7 @@
 
 ### A Vanilla-Plus Gameplay Expansion for Pokémon Gen 1 Recomp
 
-**Version:** **v0.3.1-beta — Bulbasaur Hotfix**
+**Version:** **v0.3.2-beta — Yellow Support Hotfix**
 
 > **Complete the original 151 Pokémon in a single playthrough without trading, multiple game versions, or event-exclusive content.**
 
@@ -12,7 +12,7 @@
 
 **All Pokémon Catchable 151** is a vanilla-friendly gameplay expansion for **Pokémon Gen 1 Recomp** that removes the barriers preventing players from completing the original Generation I Pokédex in a single save file.
 
-Rather than redesigning Kanto, this mod expands the original encounter tables and introduces a handful of carefully chosen quality-of-life improvements while preserving the progression, exploration, and atmosphere of the original games.
+Rather than redesigning Kanto, this mod expands the original encounter tables, restores Pokémon that were historically locked behind version exclusives, NPC trades, or one-time events, and introduces a handful of carefully chosen quality-of-life improvements while preserving the progression, exploration, and atmosphere of the original games.
 
 The goal is simple:
 
@@ -20,21 +20,7 @@ The goal is simple:
 
 ---
 
-# What's New in v0.3.1
-
-Version **0.3.1** is a small hotfix release following **Cut the Cable Edition**.
-
-### Fixed
-
-- Restored the missing **Safari Zone East** encounter table.
-- Restored Bulbasaur's intended Safari Zone encounter.
-- Restored all custom Safari Zone East encounter additions.
-
-No encounter balance or gameplay mechanics were otherwise changed.
-
----
-
-# Highlights
+# Features
 
 ## Complete the Pokédex Without Trading
 
@@ -45,6 +31,7 @@ Every original Generation I Pokémon is now obtainable without requiring:
 - Event Pokémon
 - Permanent starter choices
 - Permanent fossil choices
+- NPC trade Pokémon
 - Mandatory trade evolutions
 
 The original design of Kanto remains intact while removing its biggest completion barriers.
@@ -53,7 +40,7 @@ The original design of Kanto remains intact while removing its biggest completio
 
 ## Cut the Cable
 
-Trade evolutions now evolve naturally through level-up.
+Trade evolution Pokémon now evolve naturally through level-up.
 
 | Pokémon | Evolution |
 |----------|-----------|
@@ -62,11 +49,11 @@ Trade evolutions now evolve naturally through level-up.
 | Haunter | Gengar (Lv. 42) |
 | Machoke | Machamp (Lv. 45) |
 
-Players who prefer the original experience can still catch the fully evolved forms inside Cerulean Cave.
+Players who prefer the original experience can still encounter the fully evolved forms inside Cerulean Cave.
 
 ---
 
-## Version Exclusives Restored
+## Version Exclusives
 
 Version-exclusive Pokémon now appear naturally throughout Kanto.
 
@@ -86,6 +73,22 @@ Examples include:
 - Magmar
 - Tauros
 - Kangaskhan
+
+---
+
+## Pokémon Yellow Support
+
+Pokémon that were exclusive to Pokémon Yellow's encounter tables, NPC trades, or one-time gifts have also been integrated into the world.
+
+| Pokémon | New Location |
+|----------|--------------|
+| Tangela | Route 21 |
+| Farfetch'd | Route 13 |
+| Mr. Mime | Route 11 |
+| Jynx | Seafoam Islands B3F |
+| Lickitung | Cerulean Cave B1F |
+
+These additions allow Yellow players to complete the Pokédex without relying on one-time encounters or NPC trades while remaining faithful to official encounter locations whenever possible.
 
 ---
 
@@ -115,13 +118,11 @@ You no longer have to choose only one fossil.
 
 ## Quality of Life
 
-Several small vanilla-friendly improvements have also been added.
-
 ### Moon Stones
 
-Moon Stones are now purchasable for **₽2100**.
+Moon Stones are now permanently purchasable for **₽2100**.
 
-Available at:
+Available from:
 
 - Pewter Mart
 - Celadon Department Store 4F
@@ -181,7 +182,7 @@ Electabuzz is now available regardless of game version while preserving the orig
 
 # Design Philosophy
 
-This project is designed to feel like an official **"Vanilla Plus"** version of Generation I.
+This project is designed to feel like an official **Vanilla Plus** version of Generation I.
 
 The objective is **not** to make every Pokémon common.
 
@@ -193,7 +194,7 @@ Instead, every addition follows a few simple principles:
 - Reward exploration.
 - Avoid unnecessary mechanical changes.
 
-Whenever possible, existing encounter tables were expanded rather than replaced.
+Whenever possible, existing encounter tables were expanded rather than replaced. Wherever an official Kanto game already provided a suitable encounter, that location was used as inspiration before creating a new one.
 
 The goal is for players to occasionally think:
 
@@ -227,27 +228,21 @@ Generation I grass encounters use ten weighted encounter slots.
 | 9 | 4% |
 | 10 | 1% |
 
-Encounter placement throughout this project is designed around these weights to preserve the intended rarity of each Pokémon.
+Every modified encounter table is documented in **main.lua**, including encounter slots, intended rarity, and placement notes.
 
 ---
 
 # Roadmap
 
-## Planned for v0.3.2
+Future development will continue expanding renewable encounters while remaining faithful to the original games.
 
-Current research is focused on Generation I's **Super Rod** encounter tables.
+Current areas of research include:
 
-Planned additions include renewable encounters for Pokémon that were originally available only as one-time gifts, including:
-
-- Lapras
-- Other appropriate gift Pokémon
-
-Future updates will continue to focus on:
-
-- Encounter balancing
-- Vanilla-friendly quality-of-life improvements
-- Community feedback
-- Compatibility with future Gen 1 Recomp releases
+- Super Rod encounter tables
+- Renewable gift Pokémon (such as Lapras)
+- Additional vanilla-friendly quality-of-life improvements
+- Continued encounter balancing
+- Compatibility with future Pokémon Gen 1 Recomp releases
 
 ---
 
@@ -290,7 +285,7 @@ Inspired by the encounter design of:
 
 ## Community
 
-Special thanks to everyone in the Gen 1 Recomp Discord who tested early builds, reported bugs, and provided balance feedback.
+Special thanks to everyone in the Gen 1 Recomp Discord who tested early builds, reported bugs, suggested encounter locations, and provided balance feedback.
 
 ---
 

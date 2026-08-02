@@ -245,6 +245,29 @@ mod.content.encounters:patch("ROUTE_9", {
   },
 })
 
+mod.content.encounters:patch("ROUTE_11", {
+  grass = {
+    slots = {
+      { level = 15, species = "DROWZEE" },     -- 20%
+      { level = 15, species = "SPEAROW" },     -- 20%
+
+      { level = 14, species = "RATTATA" },     -- 15%
+
+      { level = 14, species = "PIDGEY" },      -- 10%
+      { level = 15, species = "EKANS" },       -- 10%
+      { level = 15, species = "SANDSHREW" },   -- 10%
+
+      { level = 17, species = "RATICATE" },    -- 5%
+      { level = 17, species = "PIDGEOTTO" },   -- 5%
+
+      -- Let's Go-inspired encounter
+      { level = 18, species = "MR_MIME" },     -- 4%
+
+      { level = 19, species = "PIDGEOTTO" },   -- 1%
+    },
+  },
+})
+
 mod.content.encounters:patch("ROUTE_12", {
   grass = {
     slots = {
@@ -281,7 +304,8 @@ mod.content.encounters:patch("ROUTE_13", {
       { level = 24, species = "VENONAT" },      -- 5%
       { level = 24, species = "WEEPINBELL" },   -- 5%
 
-      { level = 25, species = "WEEPINBELL" },   -- 4%
+      -- Yellow-inspired encounter
+      { level = 25, species = "FARFETCHD" },    -- 4%
       { level = 26, species = "WEEPINBELL" },   -- 1%
     },
   },
@@ -325,6 +349,27 @@ mod.content.encounters:patch("ROUTE_15", {
 
       { level = 26, species = "WEEPINBELL" },   -- 4%
       { level = 27, species = "WEEPINBELL" },   -- 1%
+    },
+  },
+})
+
+mod.content.encounters:patch("ROUTE_21", {
+  grass = {
+    slots = {
+      { level = 21, species = "RATTATA" },    -- 20%
+      { level = 23, species = "PIDGEY" },     -- 20%
+
+      { level = 30, species = "RATICATE" },   -- 15%
+
+      { level = 23, species = "RATTATA" },    -- 10%
+      { level = 21, species = "PIDGEY" },     -- 10%
+      { level = 30, species = "PIDGEOTTO" },  -- 10%
+
+      { level = 32, species = "PIDGEOTTO" },  -- 5%
+      { level = 28, species = "TANGELA" },    -- 5%
+
+      { level = 30, species = "TANGELA" },    -- 4%
+      { level = 32, species = "TANGELA" },    -- 1%
     },
   },
 })
@@ -527,6 +572,27 @@ mod.content.encounters:patch("SEAFOAM_ISLANDS_B2F", {
   },
 })
 
+mod.content.encounters:patch("SEAFOAM_ISLANDS_B3F", {
+  grass = {
+    slots = {
+      { level = 31, species = "SLOWPOKE" },   -- 20%
+      { level = 31, species = "SEEL" },       -- 20%
+
+      { level = 33, species = "SLOWPOKE" },   -- 15%
+
+      { level = 33, species = "SEEL" },       -- 10%
+      { level = 29, species = "HORSEA" },     -- 10%
+      { level = 31, species = "SHELLDER" },   -- 10%
+
+      { level = 31, species = "HORSEA" },     -- 5%
+      { level = 29, species = "SHELLDER" },   -- 5%
+
+      { level = 34, species = "JYNX" },       -- 4%
+      { level = 37, species = "DEWGONG" },    -- 1%
+    },
+  },
+})
+
 mod.content.encounters:patch("SEAFOAM_ISLANDS_B4F", {
   grass = {
     slots = {
@@ -704,7 +770,8 @@ mod.content.encounters:patch("CERULEAN_CAVE_B1F", {
       { level = 64, species = "PARASECT" },    -- 10%
       { level = 64, species = "RAICHU" },      -- 10%
 
-      { level = 57, species = "ARBOK" },       -- 5%
+      -- Yellow-inspired encounter
+      { level = 55, species = "LICKITUNG" },   -- 5%
 
       -- Trade evolution additions
       { level = 57, species = "GENGAR" },      -- 5%

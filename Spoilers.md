@@ -73,6 +73,22 @@ The following Pokémon are now obtainable regardless of game version.
 
 ---
 
+# Pokémon Yellow Additions
+
+Several Pokémon that were previously limited to Pokémon Yellow NPC trades, one-time gifts, or unique encounters have been integrated into the wild.
+
+| Pokémon | Location |
+|----------|----------|
+| Tangela | Route 21 |
+| Farfetch'd | Route 13 |
+| Mr. Mime | Route 11 |
+| Jynx | Seafoam Islands B3F |
+| Lickitung | Cerulean Cave B1F |
+
+These locations were chosen using official Pokémon Yellow and other official Kanto releases whenever possible.
+
+---
+
 # Starter Pokémon
 
 The original starters can now be encountered in the wild.
@@ -157,6 +173,8 @@ Notable additions:
 - Kangaskhan
 - Chansey
 
+---
+
 # Pokémon Mansion
 
 Additional encounters include:
@@ -199,7 +217,8 @@ If you're aiming for a complete Pokédex:
 - Revisit Pokémon Mansion after obtaining the Secret Key.
 - Victory Road contains more than just the path to the Elite Four.
 - Seafoam Islands hide more than Water- and Ice-type Pokémon.
-- Cerulean Cave contains every fully evolved trade Pokémon.
+- Cerulean Cave contains every fully evolved trade Pokémon, along with Lickitung.
+- Route 11, Route 13, and Route 21 now hide several Pokémon inspired by Pokémon Yellow.
 - Remember that Pikachu now appears in Viridian Forest regardless of version.
 - Stock up on Moon Stones before evolving Nidorina, Nidorino, Clefairy, and Jigglypuff.
 
