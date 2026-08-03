@@ -5,6 +5,16 @@ All notable changes to **All Pokémon Catchable 151** will be documented in this
 This project follows Semantic Versioning during beta development.
 
 ---
+# [0.3.3-beta] - Yellow Support Hotfix
+
+## Added
+- Added a rare wild Raichu encounter to the Power Plant.
+  - Allows Pokémon Yellow players to obtain Raichu while preserving the original starter Pikachu evolution restriction.
+
+## Fixed
+- Improved Pokémon Yellow compatibility by ensuring every original Pokémon remains obtainable in a single playthrough.
+
+---
 
 # [0.3.2-beta] - 2026-08-02
 

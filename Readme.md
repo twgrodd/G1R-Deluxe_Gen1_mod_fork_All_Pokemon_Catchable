@@ -2,7 +2,7 @@
 
 ### A Vanilla-Plus Gameplay Expansion for Pokémon Gen 1 Recomp
 
-**Version:** **v0.3.2-beta — Yellow Support Hotfix**
+**Version:** **v0.3.3-beta — Yellow Support Hotfix**
 
 > **Complete the original 151 Pokémon in a single playthrough without trading, multiple game versions, or event-exclusive content.**
 
@@ -12,7 +12,7 @@
 
 **All Pokémon Catchable 151** is a vanilla-friendly gameplay expansion for **Pokémon Gen 1 Recomp** that removes the barriers preventing players from completing the original Generation I Pokédex in a single save file.
 
-Rather than redesigning Kanto, this mod expands the original encounter tables, restores Pokémon that were historically locked behind version exclusives, NPC trades, or one-time events, and introduces a handful of carefully chosen quality-of-life improvements while preserving the progression, exploration, and atmosphere of the original games.
+Rather than redesigning Kanto, this mod expands the original encounter tables, restores Pokémon that were historically locked behind version exclusives, NPC trades, one-time events, or Pokémon Yellow-specific mechanics, and introduces a handful of carefully chosen quality-of-life improvements while preserving the progression, exploration, and atmosphere of the original games.
 
 The goal is simple:
 
@@ -78,7 +78,7 @@ Examples include:
 
 ## Pokémon Yellow Support
 
-Pokémon that were exclusive to Pokémon Yellow's encounter tables, NPC trades, or one-time gifts have also been integrated into the world.
+Pokémon that were exclusive to Pokémon Yellow's encounter tables, NPC trades, one-time gifts, or starter mechanics have also been integrated into the world.
 
 | Pokémon | New Location |
 |----------|--------------|
@@ -87,8 +87,9 @@ Pokémon that were exclusive to Pokémon Yellow's encounter tables, NPC trades, 
 | Mr. Mime | Route 11 |
 | Jynx | Seafoam Islands B3F |
 | Lickitung | Cerulean Cave B1F |
+| Raichu | Power Plant |
 
-These additions allow Yellow players to complete the Pokédex without relying on one-time encounters or NPC trades while remaining faithful to official encounter locations whenever possible.
+These additions allow Yellow players to complete the Pokédex without relying on one-time encounters, NPC trades, or the starter Pikachu's evolution restriction while remaining faithful to official encounter locations whenever possible.
 
 ---
 
@@ -176,7 +177,12 @@ A small tribute to the original Pokémon Mansion journals and the mystery surrou
 
 ## Power Plant
 
-Electabuzz is now available regardless of game version while preserving the original electric-type ecosystem.
+The Power Plant has been expanded with additional Electric-type encounters while preserving the original electric-type ecosystem.
+
+Additional encounters include:
+
+- Electabuzz
+- Raichu
 
 ---
 

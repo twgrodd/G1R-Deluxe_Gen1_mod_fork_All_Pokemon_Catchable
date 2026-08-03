@@ -75,7 +75,7 @@ The following Pokémon are now obtainable regardless of game version.
 
 # Pokémon Yellow Additions
 
-Several Pokémon that were previously limited to Pokémon Yellow NPC trades, one-time gifts, or unique encounters have been integrated into the wild.
+Several Pokémon that were previously limited to Pokémon Yellow NPC trades, one-time gifts, or starter mechanics have been integrated into the wild.
 
 | Pokémon | Location |
 |----------|----------|
@@ -84,6 +84,7 @@ Several Pokémon that were previously limited to Pokémon Yellow NPC trades, one
 | Mr. Mime | Route 11 |
 | Jynx | Seafoam Islands B3F |
 | Lickitung | Cerulean Cave B1F |
+| Raichu | Power Plant |
 
 These locations were chosen using official Pokémon Yellow and other official Kanto releases whenever possible.
 
@@ -191,9 +192,10 @@ Additional encounters include:
 
 # Power Plant
 
-Additional encounter:
+Additional encounters include:
 
 - Electabuzz
+- Raichu
 
 ---
 
@@ -218,8 +220,8 @@ If you're aiming for a complete Pokédex:
 - Victory Road contains more than just the path to the Elite Four.
 - Seafoam Islands hide more than Water- and Ice-type Pokémon.
 - Cerulean Cave contains every fully evolved trade Pokémon, along with Lickitung.
-- Route 11, Route 13, and Route 21 now hide several Pokémon inspired by Pokémon Yellow.
-- Remember that Pikachu now appears in Viridian Forest regardless of version.
+- Route 11, Route 13, Route 21, and the Power Plant now contain additional encounters inspired by Pokémon Yellow.
+- Remember that Pikachu now appears in Viridian Forest regardless of game version.
 - Stock up on Moon Stones before evolving Nidorina, Nidorino, Clefairy, and Jigglypuff.
 
 Happy hunting!

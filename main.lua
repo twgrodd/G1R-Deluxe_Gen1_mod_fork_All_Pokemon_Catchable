@@ -785,20 +785,20 @@ mod.content.encounters:patch("CERULEAN_CAVE_B1F", {
 mod.content.encounters:patch("POWER_PLANT", {
   grass = {
     slots = {
-      { level = 21, species = "VOLTORB" },
-      { level = 21, species = "MAGNEMITE" },
-      { level = 20, species = "PIKACHU" },
-      { level = 24, species = "PIKACHU" },
+      { level = 21, species = "VOLTORB" },     -- 20%
+      { level = 21, species = "MAGNEMITE" },   -- 20%
 
-      { level = 23, species = "MAGNEMITE" },
-      { level = 23, species = "VOLTORB" },
+      { level = 20, species = "PIKACHU" },     -- 15%
 
-      { level = 32, species = "MAGNETON" },
-      { level = 35, species = "MAGNETON" },
+      { level = 24, species = "PIKACHU" },     -- 10%
+      { level = 23, species = "MAGNEMITE" },   -- 10%
+      { level = 23, species = "VOLTORB" },     -- 10%
 
-      -- Rare version-independent encounters
-      { level = 33, species = "ELECTABUZZ" },
-      { level = 36, species = "ELECTABUZZ" },
+      { level = 32, species = "MAGNETON" },    -- 5%
+      { level = 35, species = "RAICHU" },      -- 5%
+
+      { level = 33, species = "ELECTABUZZ" },  -- 4%
+      { level = 36, species = "ELECTABUZZ" },  -- 1%
     },
   },
 })
