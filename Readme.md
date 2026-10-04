@@ -105,9 +105,9 @@ The original starter Pokémon now exist as extremely rare wild encounters.
 
 ---
 
-## Renewable Fossils
+## Encounther the Fossils Pokemon
 
-You no longer have to choose only one fossil.
+You have to choose a fossil, but can always find the pokemons in the wild aswell later, locations below.
 
 | Pokémon | Location |
 |----------|----------|
