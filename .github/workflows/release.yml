@@ -1,0 +1,84 @@
+name: Release mod
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "manifest.json"
+      - "main.lua"
+      - "Readme.md"
+      - "Changelog.md"
+      - "Spoilers.md"
+      - "License"
+      - ".github/workflows/release.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Read manifest
+        id: meta
+        shell: bash
+        run: |
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json
+          m = json.load(open("manifest.json", encoding="utf-8"))
+          version = str(m["version"])
+          mod_id = str(m["id"])
+          print(f"version={version}")
+          print(f"mod_id={mod_id}")
+          print(f"tag=v{version}")
+          PY
+
+      - name: Validate manifest version
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json, re
+          m = json.load(open("manifest.json", encoding="utf-8"))
+          v = str(m.get("version", ""))
+          if not re.fullmatch(r"\d+\.\d+\.\d+", v):
+              raise SystemExit(f"manifest version must be clean semver, got: {v}")
+          if m.get("id") != "all_pokemon_catchable_151_mod":
+              raise SystemExit(f"unexpected mod id: {m.get('id')}")
+          PY
+
+      - name: Build release ZIP
+        shell: bash
+        run: |
+          set -euo pipefail
+          VERSION="${{ steps.meta.outputs.version }}"
+          MOD_ID="${{ steps.meta.outputs.mod_id }}"
+          ROOT="$MOD_ID"
+          rm -rf dist "$ROOT"
+          mkdir -p dist "$ROOT"
+          cp manifest.json main.lua Readme.md Changelog.md Spoilers.md License "$ROOT"/
+          zip -r "dist/${MOD_ID}-${VERSION}.zip" "$ROOT"
+          sha256sum "dist/${MOD_ID}-${VERSION}.zip" | tee dist/sha256sums.txt
+
+      - name: Create GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.meta.outputs.tag }}
+          VERSION: ${{ steps.meta.outputs.version }}
+          MOD_ID: ${{ steps.meta.outputs.mod_id }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            echo "Release $TAG already exists; refusing to overwrite it."
+            exit 1
+          fi
+          gh release create "$TAG" \
+            "dist/${MOD_ID}-${VERSION}.zip" \
+            "dist/sha256sums.txt" \
+            --target "${GITHUB_SHA}" \
+            --title "v${VERSION} - Roddsoft-compatible fork" \
+            --notes "Creator-approved compatibility fork of Wowabox's All Pokémon Catchable 151 v0.3.3-beta Yellow Support Hotfix. Gameplay code is unchanged; the internal manifest version is normalized to ${VERSION} so sealed Gen1Recomp cartridges can pin it reliably."
