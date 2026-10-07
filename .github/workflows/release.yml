@@ -46,7 +46,7 @@ jobs:
           v = str(m.get("version", ""))
           if not re.fullmatch(r"\d+\.\d+\.\d+", v):
               raise SystemExit(f"manifest version must be clean semver, got: {v}")
-          if m.get("id") != "all_pokemon_catchable_151_mod":
+          if m.get("id") != "all_pokemon_catchable_roddsoft":
               raise SystemExit(f"unexpected mod id: {m.get('id')}")
           PY
 
@@ -81,4 +81,4 @@ jobs:
             "dist/sha256sums.txt" \
             --target "${GITHUB_SHA}" \
             --title "All Pokémon Catchable Roddsoft v${VERSION}" \
-            --notes "v${VERSION}: Roddsoft Name Update. Renames the mod display name to All Pokémon Catchable Roddsoft to distinguish this fork from the original while preserving the existing internal mod ID for compatibility."
+            --notes "v${VERSION}: Roddsoft ID Migration. Changes the permanent mod ID to all_pokemon_catchable_roddsoft and packages the release as all_pokemon_catchable_roddsoft-${VERSION}.zip. Remove older installs using the previous ID before manually installing this release; future updates can then use Gen1Recomp update tracking."
