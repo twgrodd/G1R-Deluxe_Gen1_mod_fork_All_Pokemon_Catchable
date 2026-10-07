@@ -2,7 +2,7 @@
 
 ### A Vanilla-Plus Gameplay Expansion for Pokémon Gen 1 Recomp
 
-**Version:** **v0.4.2 — Roddsoft Name Update**
+**Version:** **v0.4.3 — Update Tracking Fix**
 
 > **Complete the original 151 Pokémon in a single playthrough without trading, multiple game versions, or event-exclusive content.**
 
