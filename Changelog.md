@@ -1,17 +1,28 @@
 # Changelog
 
-All notable changes to **All Pokémon Catchable 151Roddsoft** will be documented in this file.
+All notable changes to **All Pokémon Catchable Roddsoft** will be documented in this file.
 
 This project follows Semantic Versioning during beta development.
 
 ---
+# [0.4.2] - 2026-10-07
+
+## Roddsoft Name Update
+
+### Changed
+
+- Renamed the mod display name to **All Pokémon Catchable Roddsoft**.
+- Kept the internal mod ID `all_pokemon_catchable_151_mod` unchanged for compatibility.
+
+---
+
 # [0.4.1] - 2026-10-07
 
 ## Roddsoft Branding Update
 
 ### Changed
 
-- Renamed the mod's display name to **All Pokémon Catchable 151Roddsoft** to clearly differentiate this fork from the original mod.
+- Renamed the mod's display name to **All Pokémon Catchable Roddsoft** to clearly differentiate this fork from the original mod.
 - Kept the internal mod ID `all_pokemon_catchable_151_mod` unchanged for compatibility with existing installs and tooling.
 
 ---
