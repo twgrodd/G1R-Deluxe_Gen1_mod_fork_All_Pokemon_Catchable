@@ -460,6 +460,8 @@ mod.content.encounters:patch("ROUTE_22", {
 
 mod.content.encounters:patch("SAFARI_ZONE_CENTER", {
   grass = {
+    -- Custom cumulative buckets out of 256 for the intended rates below.
+    buckets = { 38, 89, 127, 153, 178, 204, 217, 230, 243, 256 },
     slots = {
       { level = 22, species = "NIDORAN_M" },  -- 15%
       { level = 25, species = "RHYHORN" },    -- 20%
@@ -483,6 +485,8 @@ mod.content.encounters:patch("SAFARI_ZONE_CENTER", {
 
 mod.content.encounters:patch("SAFARI_ZONE_EAST", {
   grass = {
+    -- Custom cumulative buckets out of 256 for the intended rates below.
+    buckets = { 51, 89, 127, 153, 178, 204, 217, 230, 243, 256 },
     slots = {
       { level = 22, species = "NIDORAN_F" },   -- 20%
       { level = 22, species = "NIDORAN_M" },   -- 15%
@@ -507,6 +511,8 @@ mod.content.encounters:patch("SAFARI_ZONE_EAST", {
 
 mod.content.encounters:patch("SAFARI_ZONE_WEST", {
   grass = {
+    -- Custom cumulative buckets out of 256 for the intended rates below.
+    buckets = { 38, 89, 127, 153, 178, 204, 217, 230, 243, 256 },
     slots = {
       { level = 25, species = "NIDORAN_M" },   -- 15%
       { level = 26, species = "DODUO" },       -- 20%
@@ -530,6 +536,8 @@ mod.content.encounters:patch("SAFARI_ZONE_WEST", {
 
 mod.content.encounters:patch("SAFARI_ZONE_NORTH", {
   grass = {
+    -- Custom cumulative buckets out of 256 for the intended rates below.
+    buckets = { 38, 89, 127, 153, 178, 204, 217, 230, 243, 256 },
     slots = {
       { level = 22, species = "NIDORAN_M" },   -- 15%
       { level = 26, species = "RHYHORN" },     -- 20%
@@ -551,6 +559,8 @@ mod.content.encounters:patch("SAFARI_ZONE_NORTH", {
 
 mod.content.encounters:patch("SEAFOAM_ISLANDS_B2F", {
   grass = {
+    -- Custom cumulative buckets out of 256 for the intended rates below.
+    buckets = { 41, 92, 130, 156, 181, 207, 220, 233, 243, 256 },
     slots = {
       { level = 30, species = "SEEL" },       -- 16%
       { level = 30, species = "SLOWPOKE" },   -- 20%
