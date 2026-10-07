@@ -80,5 +80,5 @@ jobs:
             "dist/${MOD_ID}-${VERSION}.zip" \
             "dist/sha256sums.txt" \
             --target "${GITHUB_SHA}" \
-            --title "v${VERSION} - Roddsoft-compatible fork" \
-            --notes "v${VERSION}: Encounter Balance & Victory Road Expansion. Adds renewable Lv.37 Snorlax, raises Aerodactyl/Charmander and selected Safari/Starter encounters to ~5%, and applies real custom encounter buckets for runtime-correct rates. See Changelog.md for full details."
+            --title "All Pokémon Catchable 151Roddsoft v${VERSION}" \
+            --notes "v${VERSION}: Roddsoft Branding Update. Renames the mod display name to All Pokémon Catchable 151Roddsoft to distinguish this fork from the original while preserving the existing internal mod ID for compatibility."
