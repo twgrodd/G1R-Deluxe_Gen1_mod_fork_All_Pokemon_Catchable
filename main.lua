@@ -662,8 +662,11 @@ mod.content.encounters:patch("VICTORY_ROAD_2F", {
 
 mod.content.encounters:patch("VICTORY_ROAD_3F", {
   grass = {
+    -- Custom cumulative buckets out of 256 so this table can support
+    -- 11 slots and the intended encounter rates below.
+    buckets = { 36, 77, 115, 141, 166, 191, 204, 217, 230, 243, 256 },
     slots = {
-      { level = 24, species = "MACHOP" },       -- 20%
+      { level = 24, species = "MACHOP" },       -- 14%
       { level = 26, species = "GEODUDE" },      -- 16%
 
       { level = 22, species = "ZUBAT" },        -- 15%
@@ -676,10 +679,13 @@ mod.content.encounters:patch("VICTORY_ROAD_3F", {
       { level = 42, species = "MACHOKE" },      -- 5%
 
       -- Rare fossil encounter
-      { level = 45, species = "AERODACTYL" },   -- 4%
+      { level = 45, species = "AERODACTYL" },   -- 5%
 
       -- Rare starter encounter
       { level = 23, species = "CHARMANDER" },   -- 5%
+
+      -- Rare static-encounter alternative
+      { level = 37, species = "SNORLAX" },      -- 5%
     },
   },
 })
