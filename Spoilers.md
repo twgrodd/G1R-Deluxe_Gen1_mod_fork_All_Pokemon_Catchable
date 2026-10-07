@@ -12,7 +12,7 @@ If you'd rather discover new encounters naturally, stop reading now.
 
 This guide is intended for players and lists **where** Pokémon and other additions can be found.
 
-If you're interested in the exact encounter rates, encounter slots, levels, or implementation details, those are fully documented in **main.lua**. Every modified encounter table includes comments describing the intended rarity and placement.
+If you're interested in exact encounter rates, levels, or implementation details, see **main.lua**. Standard tables use Gen1Recomp's vanilla cumulative encounter buckets; specially balanced tables define explicit custom buckets. Because rolls use 256 discrete values, displayed percentages such as 5% are rounded targets (typically 13/256, or about 5.08%).
 
 ---
 
@@ -96,9 +96,9 @@ The original starters can now be encountered in the wild.
 
 | Pokémon | Location |
 |----------|----------|
-| Bulbasaur | Safari Zone East |
-| Charmander | Victory Road 3F |
-| Squirtle | Seafoam Islands B2F |
+| Bulbasaur | Safari Zone East — Lv. 23, ~5% |
+| Charmander | Victory Road 3F — Lv. 23, ~5% |
+| Squirtle | Seafoam Islands B2F — Lv. 23, ~5% |
 
 ---
 
@@ -110,7 +110,7 @@ Players are no longer forced to choose between fossil Pokémon.
 |----------|----------|
 | Omanyte | Seafoam Islands B4F |
 | Kabuto | Seafoam Islands B4F |
-| Aerodactyl | Victory Road 3F |
+| Aerodactyl | Victory Road 3F — Lv. 45, ~5% |
 
 ---
 
@@ -176,17 +176,23 @@ Notable additions:
 
 ---
 
+# Victory Road 3F Special Encounters
+
+In addition to Charmander and Aerodactyl, **Snorlax** is renewable here as a **Level 37 encounter at approximately 5%**.
+
+---
+
 # Pokémon Mansion
 
-Additional encounters include:
+The modified B1F encounter table includes:
 
-- Growlithe
-- Ponyta
-- Magmar
+- Koffing
 - Grimer
-- Muk
-- Weezing
+- Raticate
 - Ditto
+- Growlithe
+- Magmar
+- Mew
 
 ---
 
@@ -205,7 +211,7 @@ Additional encounters include:
 
 **Location**
 
-Pokémon Mansion B1F
+Pokémon Mansion B1F — **Level 10, approximately 1%**
 
 A hidden encounter inspired by the original Pokémon Mansion journals and the mystery surrounding Mew.
 
