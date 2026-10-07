@@ -5,6 +5,22 @@ All notable changes to **All Pokémon Catchable Roddsoft** will be documented in
 This project follows Semantic Versioning during beta development.
 
 ---
+# [0.4.3] - 2026-10-07
+
+## Update Tracking Fix
+
+### Fixed
+
+- Added the `github` repository field required by Gen1Recomp for mod release discovery.
+- Restores Gen1Recomp's **Versions** and **Check for updates / Update** controls after this version is installed.
+- Future releases can now be discovered from GitHub Releases using the existing `all_pokemon_catchable_151_mod-<version>.zip` assets.
+
+### Upgrade Note
+
+- Versions through v0.4.2 did not advertise their GitHub repository to Gen1Recomp, so they cannot discover this fix automatically. Install v0.4.3 manually once; subsequent releases can use the in-launcher update flow.
+
+---
+
 # [0.4.2] - 2026-10-07
 
 ## Roddsoft Name Update
