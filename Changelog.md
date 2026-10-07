@@ -263,14 +263,11 @@ The project now uses multiple Gen 1 Recomp content registries while maintaining 
 
 ### Developer Notes
 
-During the first public beta, two important Generation I mechanics were discovered:
-
-- Wild encounter tables contain exactly **10 encounter slots**.
-- Pokémon assigned beyond slot 10 are never loaded by the game.
+At the time of this release, the mod was reworked around the vanilla ten-slot encounter layout after extra slots were found not to work with the tables then in use.
 
 The infamous "Slot 11 Mankey" became the inspiration for this release's codename.
 
-Those discoveries fundamentally changed how every encounter table in the project was balanced going forward.
+**Historical note:** later Gen1Recomp investigation confirmed that a modded encounter definition can provide its own cumulative `buckets` array, including more than ten slots, as long as the number of buckets matches the number of slots and the final threshold is 256. v0.4.0 uses that supported mechanism for Victory Road 3F.
 
 ---
 
