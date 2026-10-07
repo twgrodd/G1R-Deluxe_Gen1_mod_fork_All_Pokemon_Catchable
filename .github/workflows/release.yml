@@ -81,4 +81,4 @@ jobs:
             "dist/sha256sums.txt" \
             --target "${GITHUB_SHA}" \
             --title "v${VERSION} - Roddsoft-compatible fork" \
-            --notes "Creator-approved compatibility fork of Wowabox's All Pokémon Catchable 151 v0.3.3-beta Yellow Support Hotfix. Gameplay code is unchanged; the internal manifest version is normalized to ${VERSION} so sealed Gen1Recomp cartridges can pin it reliably."
+            --notes "v${VERSION}: Encounter Balance & Victory Road Expansion. Adds renewable Lv.37 Snorlax, raises Aerodactyl/Charmander and selected Safari/Starter encounters to ~5%, and applies real custom encounter buckets for runtime-correct rates. See Changelog.md for full details."

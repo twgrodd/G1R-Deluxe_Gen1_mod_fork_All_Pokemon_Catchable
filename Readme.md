@@ -2,7 +2,7 @@
 
 ### A Vanilla-Plus Gameplay Expansion for Pokémon Gen 1 Recomp
 
-**Version:** **v0.3.3-beta — Yellow Support Hotfix**
+**Version:** **v0.4.0 — Encounter Balance & Victory Road Expansion**
 
 > **Complete the original 151 Pokémon in a single playthrough without trading, multiple game versions, or event-exclusive content.**
 
@@ -95,13 +95,13 @@ These additions allow Yellow players to complete the Pokédex without relying on
 
 ## Wild Starter Pokémon
 
-The original starter Pokémon now exist as extremely rare wild encounters.
+The original starter Pokémon now exist as rare wild encounters using custom weighted encounter buckets.
 
 | Pokémon | Location |
 |----------|----------|
-| Bulbasaur | Safari Zone East |
-| Charmander | Victory Road 3F |
-| Squirtle | Seafoam Islands B2F |
+| Bulbasaur | Safari Zone East — ~5% |
+| Charmander | Victory Road 3F — ~5% |
+| Squirtle | Seafoam Islands B2F — ~5% |
 
 ---
 
@@ -113,7 +113,21 @@ You have to choose a fossil, but can always find the pokemons in the wild aswell
 |----------|----------|
 | Omanyte | Seafoam Islands B4F |
 | Kabuto | Seafoam Islands B4F |
-| Aerodactyl | Victory Road 3F |
+| Aerodactyl | Victory Road 3F — ~5% |
+
+---
+
+## Victory Road 3F Expansion
+
+Victory Road 3F now uses a custom 11-slot weighted encounter table. In addition to the renewable Aerodactyl and wild Charmander encounters, **Level 37 Snorlax** can now be encountered at approximately **5%**. Aerodactyl and Charmander are also approximately **5%** each.
+
+This provides a renewable wild alternative to Snorlax's normal static encounters while keeping it appropriately rare.
+
+---
+
+## Safari Zone Rebalance
+
+The Safari Zone's rare encounters now use real custom encounter buckets rather than documentation-only percentage comments. Scyther, Pinsir, Kangaskhan, Tauros, Chansey, and wild Bulbasaur are approximately **5%** in their intended modified tables.
 
 ---
 
@@ -219,7 +233,7 @@ mod.content.text_pointers:patch()
 mod.content.items:patch()
 ```
 
-Generation I grass encounters use ten weighted encounter slots.
+Generation I normally uses ten weighted grass encounter slots. Gen1Recomp also supports per-table custom cumulative `buckets`, allowing a modified table to use a different number of slots when the bucket count matches the slot count and the final threshold is 256.
 
 | Slot | Chance |
 |------|--------|
@@ -234,7 +248,7 @@ Generation I grass encounters use ten weighted encounter slots.
 | 9 | 4% |
 | 10 | 1% |
 
-Every modified encounter table is documented in **main.lua**, including encounter slots, intended rarity, and placement notes.
+Standard tables use the vanilla cumulative bucket thresholds. Custom-balanced tables (Safari Zone, Seafoam Islands B2F, and Victory Road 3F) define explicit `buckets` in **main.lua**. Because encounter rolls use 256 discrete values, displayed percentages are rounded targets; for example, a 13/256 bucket is approximately 5.08%.
 
 ---
 

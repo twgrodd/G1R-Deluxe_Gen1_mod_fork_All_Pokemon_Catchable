@@ -5,6 +5,36 @@ All notable changes to **All Pokémon Catchable 151** will be documented in this
 This project follows Semantic Versioning during beta development.
 
 ---
+# [0.4.0] - 2026-10-07
+
+## Encounter Balance & Victory Road Expansion
+
+### Added
+
+- Added **Level 37 Snorlax** as a renewable wild encounter on Victory Road 3F at approximately 5%.
+- Added a custom 11-slot encounter table for Victory Road 3F using Gen1Recomp's supported per-table encounter buckets.
+
+### Changed
+
+- Increased **Aerodactyl** on Victory Road 3F to approximately 5%.
+- Increased **Charmander** on Victory Road 3F to approximately 5%.
+- Rebalanced Victory Road 3F primarily by reducing Machop while preserving the existing encounter roster.
+- Increased **Bulbasaur** in Safari Zone East to approximately 5%.
+- Increased Safari Zone rare encounters to approximately 5% in the modified tables, including Scyther, Pinsir, Kangaskhan, Tauros, and Chansey.
+- Increased **Squirtle** in Seafoam Islands B2F to approximately 5%, primarily taking probability from Seel.
+
+### Fixed
+
+- Corrected earlier encounter-rate edits that changed Lua comments but did not alter runtime probabilities.
+- Added explicit custom cumulative `buckets` to every table that requires non-vanilla slot weights.
+- Audited all 33 modified encounter tables for matching slot/bucket counts, strictly increasing thresholds, and complete 0-255 probability coverage.
+
+### Technical Notes
+
+Gen1Recomp selects wild encounter slots from cumulative thresholds over 256 possible roll values. Standard tables retain the vanilla bucket layout. Custom-balanced tables now provide explicit bucket arrays, including the 11-slot Victory Road 3F table. As a result, displayed percentages are rounded targets: a nominal 5% slot is typically 13/256, or approximately 5.08%.
+
+---
+
 # [0.3.3-beta] - Yellow Support Hotfix
 
 ## Added
