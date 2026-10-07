@@ -552,7 +552,7 @@ mod.content.encounters:patch("SAFARI_ZONE_NORTH", {
 mod.content.encounters:patch("SEAFOAM_ISLANDS_B2F", {
   grass = {
     slots = {
-      { level = 30, species = "SEEL" },       -- 20%
+      { level = 30, species = "SEEL" },       -- 16%
       { level = 30, species = "SLOWPOKE" },   -- 20%
 
       { level = 32, species = "SEEL" },       -- 15%
@@ -567,7 +567,7 @@ mod.content.encounters:patch("SEAFOAM_ISLANDS_B2F", {
       { level = 30, species = "GOLBAT" },     -- 4%
 
       -- Rare starter encounter
-      { level = 23, species = "SQUIRTLE" },   -- 1%
+      { level = 23, species = "SQUIRTLE" },   -- 5%
     },
   },
 })
