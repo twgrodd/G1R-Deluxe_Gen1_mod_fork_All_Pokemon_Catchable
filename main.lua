@@ -485,7 +485,7 @@ mod.content.encounters:patch("SAFARI_ZONE_EAST", {
   grass = {
     slots = {
       { level = 22, species = "NIDORAN_F" },   -- 20%
-      { level = 22, species = "NIDORAN_M" },   -- 20%
+      { level = 22, species = "NIDORAN_M" },   -- 15%
 
       { level = 24, species = "EXEGGCUTE" },   -- 15%
 
@@ -497,10 +497,10 @@ mod.content.encounters:patch("SAFARI_ZONE_EAST", {
       { level = 25, species = "KANGASKHAN" },  -- 5%
 
       -- Rare version-independent encounter
-      { level = 23, species = "PINSIR" },       -- 4%
+      { level = 23, species = "PINSIR" },       -- 5%
 
-      -- Very rare starter encounter
-      { level = 23, species = "BULBASAUR" },    -- 1%
+      -- Rare starter encounter
+      { level = 23, species = "BULBASAUR" },    -- 5%
     },
   },
 })
