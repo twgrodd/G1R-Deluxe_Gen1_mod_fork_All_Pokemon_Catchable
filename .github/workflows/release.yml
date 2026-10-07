@@ -80,5 +80,5 @@ jobs:
             "dist/${MOD_ID}-${VERSION}.zip" \
             "dist/sha256sums.txt" \
             --target "${GITHUB_SHA}" \
-            --title "All Pokémon Catchable 151Roddsoft v${VERSION}" \
-            --notes "v${VERSION}: Roddsoft Branding Update. Renames the mod display name to All Pokémon Catchable 151Roddsoft to distinguish this fork from the original while preserving the existing internal mod ID for compatibility."
+            --title "All Pokémon Catchable Roddsoft v${VERSION}" \
+            --notes "v${VERSION}: Roddsoft Name Update. Renames the mod display name to All Pokémon Catchable Roddsoft to distinguish this fork from the original while preserving the existing internal mod ID for compatibility."
