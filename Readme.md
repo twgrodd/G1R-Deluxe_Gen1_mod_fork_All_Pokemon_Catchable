@@ -1,8 +1,8 @@
-# All Pokémon Catchable 151Roddsoft
+# All Pokémon Catchable Roddsoft
 
 ### A Vanilla-Plus Gameplay Expansion for Pokémon Gen 1 Recomp
 
-**Version:** **v0.4.1 — Roddsoft Branding Update**
+**Version:** **v0.4.2 — Roddsoft Name Update**
 
 > **Complete the original 151 Pokémon in a single playthrough without trading, multiple game versions, or event-exclusive content.**
 
@@ -10,7 +10,7 @@
 
 # Overview
 
-**All Pokémon Catchable 151Roddsoft** is a vanilla-friendly gameplay expansion for **Pokémon Gen 1 Recomp** that removes the barriers preventing players from completing the original Generation I Pokédex in a single save file.
+**All Pokémon Catchable Roddsoft** is a vanilla-friendly gameplay expansion for **Pokémon Gen 1 Recomp** that removes the barriers preventing players from completing the original Generation I Pokédex in a single save file.
 
 Rather than redesigning Kanto, this mod expands the original encounter tables, restores Pokémon that were historically locked behind version exclusives, NPC trades, one-time events, or Pokémon Yellow-specific mechanics, and introduces a handful of carefully chosen quality-of-life improvements while preserving the progression, exploration, and atmosphere of the original games.
 
