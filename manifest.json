@@ -1,7 +1,7 @@
 {
-  "id": "all_pokemon_catchable_151_mod",
+  "id": "all_pokemon_catchable_roddsoft",
   "name": "All Pokémon Catchable Roddsoft",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "api": 2,
   "entry": "main.lua",
   "profile": "content",
