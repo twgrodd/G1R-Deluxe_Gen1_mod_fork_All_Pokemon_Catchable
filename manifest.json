@@ -1,7 +1,7 @@
 {
   "id": "all_pokemon_catchable_151_mod",
   "name": "All Pokémon Catchable Roddsoft",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "api": 2,
   "entry": "main.lua",
   "profile": "content",
@@ -11,5 +11,6 @@
   "dependencies": [],
   "optional_dependencies": [],
   "conflicts": [],
-  "description": "Complete the Kanto Pokedex without trading, with balanced renewable rare encounters."
+  "description": "Complete the Kanto Pokedex without trading, with balanced renewable rare encounters.",
+  "github": "twgrodd/G1R-Deluxe_Gen1_mod_fork_All_Pokemon_Catchable"
 }
