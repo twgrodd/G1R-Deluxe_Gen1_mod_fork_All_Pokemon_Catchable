@@ -461,7 +461,7 @@ mod.content.encounters:patch("ROUTE_22", {
 mod.content.encounters:patch("SAFARI_ZONE_CENTER", {
   grass = {
     slots = {
-      { level = 22, species = "NIDORAN_M" },  -- 20%
+      { level = 22, species = "NIDORAN_M" },  -- 15%
       { level = 25, species = "RHYHORN" },    -- 20%
 
       { level = 22, species = "VENONAT" },    -- 15%
@@ -475,8 +475,8 @@ mod.content.encounters:patch("SAFARI_ZONE_CENTER", {
       { level = 31, species = "NIDORINA" },   -- 5%
       { level = 30, species = "PARASECT" },   -- 5%
 
-      { level = 23, species = "SCYTHER" },     -- 4%
-      { level = 23, species = "PINSIR" },      -- 1%
+      { level = 23, species = "SCYTHER" },     -- 5%
+      { level = 23, species = "PINSIR" },      -- 5%
     },
   },
 })
