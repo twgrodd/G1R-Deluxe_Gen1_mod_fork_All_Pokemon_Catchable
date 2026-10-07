@@ -1,4 +1,4 @@
-# All Pokémon Catchable 151Roddsoft
+# All Pokémon Catchable Roddsoft
 
 # Spoiler Guide
 
