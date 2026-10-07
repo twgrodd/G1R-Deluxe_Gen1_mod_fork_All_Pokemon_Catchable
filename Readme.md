@@ -24,7 +24,7 @@ The goal is simple:
 
 ## Complete the Pokédex Without Trading
 
-Every original Generation I Pokémon is now obtainable without requiring:
+The mod is designed so every original Generation I Pokémon can be obtained in a single save without requiring:
 
 - Trading
 - Multiple game versions
@@ -105,9 +105,9 @@ The original starter Pokémon now exist as rare wild encounters using custom wei
 
 ---
 
-## Encounther the Fossils Pokemon
+## Renewable Fossil Pokémon
 
-You have to choose a fossil, but can always find the pokemons in the wild aswell later, locations below.
+You still make the normal fossil choice during the story, but the fossil Pokémon themselves can also be encountered in the wild later. This makes both fossil lines and Aerodactyl renewable without changing the original fossil event.
 
 | Pokémon | Location |
 |----------|----------|
@@ -173,11 +173,11 @@ Pokémon Mansion has been expanded with Pokémon that fit Cinnabar Island's rese
 Additional encounters include:
 
 - Growlithe
-- Ponyta
 - Magmar
 - Grimer
-- Muk
-- Weezing
+- Koffing
+- Raticate
+- Ditto
 
 ### Secret Encounter
 
@@ -214,7 +214,7 @@ Instead, every addition follows a few simple principles:
 - Reward exploration.
 - Avoid unnecessary mechanical changes.
 
-Whenever possible, existing encounter tables were expanded rather than replaced. Wherever an official Kanto game already provided a suitable encounter, that location was used as inspiration before creating a new one.
+Encounter tables are patched through Gen1Recomp's content registry, preserving vanilla-style weighting where possible and using explicit custom buckets where a modified rarity or additional slot is required. Wherever an official Kanto game already provided a suitable encounter, that location was used as inspiration before creating a new one.
 
 The goal is for players to occasionally think:
 
