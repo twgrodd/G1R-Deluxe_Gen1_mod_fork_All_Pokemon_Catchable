@@ -5,6 +5,24 @@ All notable changes to **All Pokémon Catchable Roddsoft** will be documented in
 This project follows Semantic Versioning during beta development.
 
 ---
+# [0.4.4] - 2026-10-07
+
+## Roddsoft ID Migration
+
+### Changed
+
+- Changed the permanent manifest ID from `all_pokemon_catchable_151_mod` to `all_pokemon_catchable_roddsoft`.
+- Removed `151` from the internal identity so this fork is clearly separated from the original mod.
+- Release ZIPs now use `all_pokemon_catchable_roddsoft-<version>.zip` for Gen1Recomp update compatibility.
+- Retained the `github` metadata required for **Versions** and **Check for updates / Update**.
+
+### Upgrade Note
+
+- Gen1Recomp treats v0.4.4 as a different mod from releases using the old ID. Remove the old installed mod before manually installing v0.4.4 to avoid duplicate entries.
+- `all_pokemon_catchable_roddsoft` is intended to remain the permanent ID for future releases so in-launcher updates can work normally after this migration.
+
+---
+
 # [0.4.3] - 2026-10-07
 
 ## Update Tracking Fix
