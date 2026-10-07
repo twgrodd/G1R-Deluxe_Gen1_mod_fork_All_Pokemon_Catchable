@@ -664,7 +664,7 @@ mod.content.encounters:patch("VICTORY_ROAD_3F", {
   grass = {
     slots = {
       { level = 24, species = "MACHOP" },       -- 20%
-      { level = 26, species = "GEODUDE" },      -- 20%
+      { level = 26, species = "GEODUDE" },      -- 16%
 
       { level = 22, species = "ZUBAT" },        -- 15%
 
@@ -678,8 +678,8 @@ mod.content.encounters:patch("VICTORY_ROAD_3F", {
       -- Rare fossil encounter
       { level = 45, species = "AERODACTYL" },   -- 4%
 
-      -- Very rare starter encounter
-      { level = 23, species = "CHARMANDER" },   -- 1%
+      -- Rare starter encounter
+      { level = 23, species = "CHARMANDER" },   -- 5%
     },
   },
 })
