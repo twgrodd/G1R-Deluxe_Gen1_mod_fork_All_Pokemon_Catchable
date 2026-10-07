@@ -508,7 +508,7 @@ mod.content.encounters:patch("SAFARI_ZONE_EAST", {
 mod.content.encounters:patch("SAFARI_ZONE_WEST", {
   grass = {
     slots = {
-      { level = 25, species = "NIDORAN_M" },   -- 20%
+      { level = 25, species = "NIDORAN_M" },   -- 15%
       { level = 26, species = "DODUO" },       -- 20%
 
       { level = 23, species = "VENONAT" },     -- 15%
@@ -521,8 +521,8 @@ mod.content.encounters:patch("SAFARI_ZONE_WEST", {
       { level = 26, species = "TAUROS" },      -- 5%
 
       -- Rare Safari encounters
-      { level = 23, species = "SCYTHER" },     -- 4%
-      { level = 28, species = "KANGASKHAN" },  -- 1%
+      { level = 23, species = "SCYTHER" },     -- 5%
+      { level = 28, species = "KANGASKHAN" },  -- 5%
     },
   },
 })
@@ -531,7 +531,7 @@ mod.content.encounters:patch("SAFARI_ZONE_WEST", {
 mod.content.encounters:patch("SAFARI_ZONE_NORTH", {
   grass = {
     slots = {
-      { level = 22, species = "NIDORAN_M" },   -- 20%
+      { level = 22, species = "NIDORAN_M" },   -- 15%
       { level = 26, species = "RHYHORN" },     -- 20%
 
       { level = 23, species = "PARAS" },       -- 15%
@@ -543,8 +543,8 @@ mod.content.encounters:patch("SAFARI_ZONE_NORTH", {
       { level = 32, species = "VENOMOTH" },    -- 5%
       { level = 25, species = "KANGASKHAN" },  -- 5%
 
-      { level = 28, species = "TAUROS" },      -- 4%
-      { level = 26, species = "CHANSEY" },     -- 1%
+      { level = 28, species = "TAUROS" },      -- 5%
+      { level = 26, species = "CHANSEY" },     -- 5%
     },
   },
 })
