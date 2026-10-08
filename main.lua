@@ -515,23 +515,19 @@ mod.content.encounters:patch("SAFARI_ZONE_WEST", {
 
 mod.content.encounters:patch("SAFARI_ZONE_NORTH", {
   grass = {
-    -- Custom cumulative buckets out of 256 for the intended rates below.
-    buckets = { 38, 89, 127, 153, 178, 204, 217, 230, 243, 256 },
+    -- Standard 10-slot encounter weights; no unsupported custom buckets.
+    -- Chansey trades places with the level-25 Exeggcute (slot 4).
     slots = {
-      { level = 22, species = "NIDORAN_M" },   -- 15%
-      { level = 26, species = "RHYHORN" },     -- 20%
-
-      { level = 23, species = "PARAS" },       -- 15%
-
-      { level = 25, species = "EXEGGCUTE" },   -- 10%
-      { level = 30, species = "NIDORINO" },    -- 10%
-      { level = 27, species = "EXEGGCUTE" },   -- 10%
-
-      { level = 32, species = "VENOMOTH" },    -- 5%
-      { level = 25, species = "KANGASKHAN" },  -- 5%
-
-      { level = 28, species = "TAUROS" },      -- 5%
-      { level = 26, species = "CHANSEY" },     -- 5%
+      { level = 25, species = "KANGASKHAN" },  -- 19.92%
+      { level = 26, species = "RHYHORN" },     -- 19.92%
+      { level = 23, species = "PARAS" },       -- 15.23%
+      { level = 26, species = "CHANSEY" },     -- 9.77%
+      { level = 30, species = "NIDORINO" },    -- 9.77%
+      { level = 27, species = "EXEGGCUTE" },   -- 9.77%
+      { level = 28, species = "TAUROS" },      -- 5.08%
+      { level = 25, species = "EXEGGCUTE" },   -- 5.08%
+      { level = 32, species = "VENOMOTH" },    -- 4.30%
+      { level = 22, species = "NIDORAN_M" },   -- 1.17%
     },
   },
 })
