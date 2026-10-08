@@ -672,30 +672,19 @@ mod.content.encounters:patch("VICTORY_ROAD_2F", {
 
 mod.content.encounters:patch("VICTORY_ROAD_3F", {
   grass = {
-    -- Custom cumulative buckets out of 256 so this table can support
-    -- 11 slots and the intended encounter rates below.
-    buckets = { 36, 77, 115, 141, 166, 191, 204, 217, 230, 243, 256 },
+    -- Vanilla 10-slot encounter weights; no unsupported custom buckets.
+    -- Geodude is removed from this floor (still found on Victory Road 1F/2F).
     slots = {
-      { level = 24, species = "MACHOP" },       -- 14%
-      { level = 26, species = "GEODUDE" },      -- 16%
-
-      { level = 22, species = "ZUBAT" },        -- 15%
-
-      { level = 40, species = "VENOMOTH" },     -- 10%
-      { level = 45, species = "ONIX" },         -- 10%
-      { level = 43, species = "GRAVELER" },     -- 10%
-
-      { level = 41, species = "GOLBAT" },       -- 5%
-      { level = 42, species = "MACHOKE" },      -- 5%
-
-      -- Rare fossil encounter
-      { level = 45, species = "AERODACTYL" },   -- 5%
-
-      -- Rare starter encounter
-      { level = 23, species = "CHARMANDER" },   -- 5%
-
-      -- Rare static-encounter alternative
-      { level = 37, species = "SNORLAX" },      -- 5%
+      { level = 24, species = "MACHOP" },       -- 19.92%
+      { level = 22, species = "ZUBAT" },        -- 19.92%
+      { level = 40, species = "VENOMOTH" },     -- 15.23%
+      { level = 45, species = "ONIX" },         -- 9.77%
+      { level = 43, species = "GRAVELER" },     -- 9.77%
+      { level = 41, species = "GOLBAT" },       -- 9.77%
+      { level = 45, species = "AERODACTYL" },   -- 5.08%
+      { level = 23, species = "CHARMANDER" },   -- 5.08%
+      { level = 37, species = "SNORLAX" },      -- 4.30%
+      { level = 42, species = "MACHOKE" },      -- 1.17%
     },
   },
 })
