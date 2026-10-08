@@ -496,24 +496,18 @@ mod.content.encounters:patch("SAFARI_ZONE_EAST", {
 
 mod.content.encounters:patch("SAFARI_ZONE_WEST", {
   grass = {
-    -- Custom cumulative buckets out of 256 for the intended rates below.
-    buckets = { 38, 89, 127, 153, 178, 204, 217, 230, 243, 256 },
+    -- Standard 10-slot encounter weights; no unsupported custom buckets.
     slots = {
-      { level = 25, species = "NIDORAN_M" },   -- 15%
-      { level = 26, species = "DODUO" },       -- 20%
-
-      { level = 23, species = "VENONAT" },     -- 15%
-
-      { level = 24, species = "EXEGGCUTE" },   -- 10%
-      { level = 33, species = "NIDORINO" },    -- 10%
-      { level = 31, species = "VENOMOTH" },    -- 10%
-
-      { level = 25, species = "NIDORAN_F" },   -- 5%
-      { level = 26, species = "TAUROS" },      -- 5%
-
-      -- Rare Safari encounters
-      { level = 23, species = "SCYTHER" },     -- 5%
-      { level = 28, species = "KANGASKHAN" },  -- 5%
+      { level = 31, species = "VENOMOTH" },    -- 19.92%
+      { level = 26, species = "DODUO" },       -- 19.92%
+      { level = 23, species = "VENONAT" },     -- 15.23%
+      { level = 26, species = "TAUROS" },      -- 9.77%
+      { level = 33, species = "NIDORINO" },    -- 9.77%
+      { level = 25, species = "NIDORAN_M" },   -- 9.77%
+      { level = 23, species = "SCYTHER" },     -- 5.08%
+      { level = 28, species = "KANGASKHAN" },  -- 5.08%
+      { level = 24, species = "EXEGGCUTE" },   -- 4.30%
+      { level = 25, species = "NIDORAN_F" },   -- 1.17%
     },
   },
 })
