@@ -485,26 +485,18 @@ mod.content.encounters:patch("SAFARI_ZONE_CENTER", {
 
 mod.content.encounters:patch("SAFARI_ZONE_EAST", {
   grass = {
-    -- Custom cumulative buckets out of 256 for the intended rates below.
-    buckets = { 51, 89, 127, 153, 178, 204, 217, 230, 243, 256 },
+    -- Standard 10-slot encounter weights; no custom buckets.
     slots = {
-      { level = 22, species = "NIDORAN_F" },   -- 20%
-      { level = 22, species = "NIDORAN_M" },   -- 15%
-
-      { level = 24, species = "EXEGGCUTE" },   -- 15%
-
-      { level = 26, species = "RHYHORN" },     -- 10%
-      { level = 23, species = "PARAS" },       -- 10%
-      { level = 25, species = "EXEGGCUTE" },   -- 10%
-
-      { level = 25, species = "TAUROS" },      -- 5%
-      { level = 25, species = "KANGASKHAN" },  -- 5%
-
-      -- Rare version-independent encounter
-      { level = 23, species = "PINSIR" },       -- 5%
-
-      -- Rare starter encounter
-      { level = 23, species = "BULBASAUR" },    -- 5%
+      { level = 22, species = "KANGASKHAN" },  -- 19.92%
+      { level = 22, species = "NIDORAN_M" },   -- 19.92%
+      { level = 24, species = "EXEGGCUTE" },   -- 15.23%
+      { level = 26, species = "TAUROS" },      -- 9.77%
+      { level = 23, species = "BULBASAUR" },   -- 9.77%
+      { level = 25, species = "EXEGGCUTE" },   -- 9.77%
+      { level = 23, species = "PINSIR" },      -- 5.08%
+      { level = 23, species = "PARAS" },       -- 5.08%
+      { level = 25, species = "RHYHORN" },     -- 4.30%
+      { level = 25, species = "NIDORAN_F" },   -- 1.17%
     },
   },
 })
