@@ -2,7 +2,7 @@
 
 ### A Vanilla-Plus Gameplay Expansion for Pokémon Gen 1 Recomp
 
-**Version:** **v0.4.4 — Roddsoft ID Migration**
+**Version:** **v0.4.5 — Encounter Compatibility Fix**
 
 > **Complete the original 151 Pokémon in a single playthrough without trading, multiple game versions, or event-exclusive content.**
 
@@ -95,13 +95,13 @@ These additions allow Yellow players to complete the Pokédex without relying on
 
 ## Wild Starter Pokémon
 
-The original starter Pokémon now exist as rare wild encounters using custom weighted encounter buckets.
+The original starter Pokémon now exist as rare wild encounters using Gen1Recomp's standard ten-slot encounter weights.
 
 | Pokémon | Location |
 |----------|----------|
-| Bulbasaur | Safari Zone East — ~5% |
+| Bulbasaur | Safari Zone East — ~9.77% |
 | Charmander | Victory Road 3F — ~5% |
-| Squirtle | Seafoam Islands B2F — ~5% |
+| Squirtle | Seafoam Islands B2F — ~9.77% |
 
 ---
 
@@ -119,7 +119,7 @@ You still make the normal fossil choice during the story, but the fossil Pokémo
 
 ## Victory Road 3F Expansion
 
-Victory Road 3F now uses a custom 11-slot weighted encounter table. In addition to the renewable Aerodactyl and wild Charmander encounters, **Level 37 Snorlax** can now be encountered at approximately **5%**. Aerodactyl and Charmander are also approximately **5%** each.
+Victory Road 3F uses the supported standard ten-slot encounter table. In addition to renewable Aerodactyl and wild Charmander at approximately **5.08%** each, **Level 37 Snorlax** is available at approximately **4.30%**. Geodude was removed from this floor but remains available on Victory Road 1F and 2F.
 
 This provides a renewable wild alternative to Snorlax's normal static encounters while keeping it appropriately rare.
 
@@ -127,7 +127,7 @@ This provides a renewable wild alternative to Snorlax's normal static encounters
 
 ## Safari Zone Rebalance
 
-The Safari Zone's rare encounters now use real custom encounter buckets rather than documentation-only percentage comments. Scyther, Pinsir, Kangaskhan, Tauros, Chansey, and wild Bulbasaur are approximately **5%** in their intended modified tables.
+Safari Zone encounters now use the supported standard ten-slot encounter weights. Rates depend on each Pokémon's assigned slot: for example, Bulbasaur is **9.77%** in Safari Zone East, Chansey is **9.77%** in Safari Zone North, and Scyther and Pinsir are **5.08%** in Safari Zone Center.
 
 ---
 
@@ -214,7 +214,7 @@ Instead, every addition follows a few simple principles:
 - Reward exploration.
 - Avoid unnecessary mechanical changes.
 
-Encounter tables are patched through Gen1Recomp's content registry, preserving vanilla-style weighting where possible and using explicit custom buckets where a modified rarity or additional slot is required. Wherever an official Kanto game already provided a suitable encounter, that location was used as inspiration before creating a new one.
+Encounter tables are patched through Gen1Recomp's content registry, using the standard ten-slot weighting throughout. Wherever an official Kanto game already provided a suitable encounter, that location was used as inspiration before creating a new one.
 
 The goal is for players to occasionally think:
 
@@ -233,7 +233,7 @@ mod.content.text_pointers:patch()
 mod.content.items:patch()
 ```
 
-Generation I normally uses ten weighted grass encounter slots. Gen1Recomp also supports per-table custom cumulative `buckets`, allowing a modified table to use a different number of slots when the bucket count matches the slot count and the final threshold is 256.
+Generation I uses ten weighted grass encounter slots. Although the internal encounter engine can represent cumulative bucket arrays, the Gen1Recomp mod content-patch schema rejects `grass.buckets`. This mod therefore patches only the supported ten-slot `grass.slots` field.
 
 | Slot | Chance |
 |------|--------|
@@ -248,7 +248,7 @@ Generation I normally uses ten weighted grass encounter slots. Gen1Recomp also s
 | 9 | 4% |
 | 10 | 1% |
 
-Standard tables use the vanilla cumulative bucket thresholds. Custom-balanced tables (Safari Zone, Seafoam Islands B2F, and Victory Road 3F) define explicit `buckets` in **main.lua**. Because encounter rolls use 256 discrete values, displayed percentages are rounded targets; for example, a 13/256 bucket is approximately 5.08%.
+Every patched grass table uses the vanilla cumulative thresholds. The ten slot rates are 51/256 (19.92%), 51/256 (19.92%), 39/256 (15.23%), 25/256 (9.77%) each for slots 4–6, 13/256 (5.08%) each for slots 7–8, 11/256 (4.30%) for slot 9, and 3/256 (1.17%) for slot 10. Rates are conditional on a wild encounter occurring.
 
 ---
 
