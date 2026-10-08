@@ -5,6 +5,32 @@ All notable changes to **All Pokémon Catchable Roddsoft** will be documented in
 This project follows Semantic Versioning during beta development.
 
 ---
+# [0.4.5] - 2026-10-08
+
+## Encounter Compatibility & Release Repair
+
+### Fixed
+
+- Removed unsupported `grass.buckets` from all six affected encounter patches (Safari Zone Center, East, West, North; Seafoam Islands B2F; Victory Road 3F). The Gen1Recomp content-patch schema rejects this field, even though the internal encounter engine can represent bucket arrays.
+- Restored standard ten-slot encounter tables in all 33 patched locations, eliminating the incompatible 11-slot Victory Road 3F table.
+- Applied the approved Safari Zone North Chansey/Exeggcute swap: Chansey Lv. 26 is in slot 4 (~9.77%); Exeggcute Lv. 25 is in slot 8 (~5.08%).
+- Applied the approved Seafoam Islands B2F lineup: Shellder Lv. 28 in slot 3 (~15.23%), Squirtle Lv. 23 in slot 4 (~9.77%), Slowpoke Lv. 28 in slot 7 (~5.08%), Seel Lv. 32 in slot 9 (~4.30%), and Golbat Lv. 30 in slot 10 (~1.17%).
+- Corrected documentation and release-note generation to match the actual supported encounter weights.
+
+### Balance Notes
+
+- Bulbasaur (Safari East) and Squirtle (Seafoam B2F): ~9.77% each.
+- Aerodactyl and Charmander (Victory Road 3F): ~5.08% each; Snorlax Lv. 37: ~4.30%.
+- Geodude is no longer on Victory Road 3F but remains on 1F and 2F.
+- The standard ten-slot probabilities are 51, 51, 39, 25, 25, 25, 13, 13, 11, and 3 out of 256, respectively.
+
+### Testing
+
+- Static audit: 33 distinct encounter tables, each with ten slots; no custom `buckets` fields.
+- In-game loading and encounter behavior still require verification in Gen1Recomp.
+
+---
+
 # [0.4.4] - 2026-10-07
 
 ## Roddsoft ID Migration
@@ -87,7 +113,7 @@ This project follows Semantic Versioning during beta development.
 
 ### Technical Notes
 
-Gen1Recomp selects wild encounter slots from cumulative thresholds over 256 possible roll values. Standard tables retain the vanilla bucket layout. Custom-balanced tables now provide explicit bucket arrays, including the 11-slot Victory Road 3F table. As a result, displayed percentages are rounded targets: a nominal 5% slot is typically 13/256, or approximately 5.08%.
+**Historical implementation note (superseded in v0.4.5):** this version attempted to use custom cumulative bucket arrays. The mod content-patch schema does not support `grass.buckets`, so these changes caused mod-manager validation errors. v0.4.5 removes them and uses the standard ten-slot weights.
 
 ---
 
@@ -267,7 +293,7 @@ At the time of this release, the mod was reworked around the vanilla ten-slot en
 
 The infamous "Slot 11 Mankey" became the inspiration for this release's codename.
 
-**Historical note:** later Gen1Recomp investigation confirmed that a modded encounter definition can provide its own cumulative `buckets` array, including more than ten slots, as long as the number of buckets matches the number of slots and the final threshold is 256. v0.4.0 uses that supported mechanism for Victory Road 3F.
+**Historical correction (v0.4.5):** the internal encounter engine accepts custom buckets, but the mod content-patch schema rejects `grass.buckets`. The 11-slot approach introduced in v0.4.0 was incompatible and was replaced with standard ten-slot tables in v0.4.5.
 
 ---
 
