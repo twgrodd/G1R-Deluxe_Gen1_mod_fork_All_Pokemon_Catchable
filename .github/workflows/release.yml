@@ -73,12 +73,23 @@ jobs:
         run: |
           set -euo pipefail
           if gh release view "$TAG" >/dev/null 2>&1; then
-            echo "Release $TAG already exists; refusing to overwrite it."
-            exit 1
+            echo "Release $TAG already exists; skipping duplicate release."
+            exit 0
           fi
+          python3 - <<'PY'
+          import os, re
+          version = os.environ["VERSION"]
+          changelog = open("Changelog.md", encoding="utf-8").read()
+          pattern = rf"(?ms)^# \[{re.escape(version)}\][^\n]*\n(.*?)(?=^# \[|\Z)"
+          match = re.search(pattern, changelog)
+          if not match:
+              raise SystemExit(f"Missing changelog section for {version}")
+          with open("dist/release-notes.md", "w", encoding="utf-8") as out:
+              out.write(match.group(1).strip() + "\n")
+          PY
           gh release create "$TAG" \
             "dist/${MOD_ID}-${VERSION}.zip" \
             "dist/sha256sums.txt" \
             --target "${GITHUB_SHA}" \
             --title "All Pokémon Catchable Roddsoft v${VERSION}" \
-            --notes "v${VERSION}: Roddsoft ID Migration. Changes the permanent mod ID to all_pokemon_catchable_roddsoft and packages the release as all_pokemon_catchable_roddsoft-${VERSION}.zip. Remove older installs using the previous ID before manually installing this release; future updates can then use Gen1Recomp update tracking."
+            --notes-file "dist/release-notes.md"
