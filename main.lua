@@ -460,25 +460,18 @@ mod.content.encounters:patch("ROUTE_22", {
 
 mod.content.encounters:patch("SAFARI_ZONE_CENTER", {
   grass = {
-    -- Custom cumulative buckets out of 256 for the intended rates below.
-    buckets = { 38, 89, 127, 153, 178, 204, 217, 230, 243, 256 },
+    -- Standard 10-slot encounter weights; no unsupported custom buckets.
     slots = {
-      { level = 22, species = "NIDORAN_M" },  -- 15%
-      { level = 25, species = "RHYHORN" },    -- 20%
-
-      { level = 22, species = "VENONAT" },    -- 15%
-
-      { level = 24, species = "EXEGGCUTE" },  -- 10%
-      { level = 31, species = "NIDORINO" },   -- 10%
-
-      -- Rare Eevee encounter
-      { level = 23, species = "EEVEE" },       -- 10%
-
-      { level = 31, species = "NIDORINA" },   -- 5%
-      { level = 30, species = "PARASECT" },   -- 5%
-
-      { level = 23, species = "SCYTHER" },     -- 5%
-      { level = 23, species = "PINSIR" },      -- 5%
+      { level = 23, species = "EEVEE" },       -- 19.92%
+      { level = 25, species = "RHYHORN" },     -- 19.92%
+      { level = 22, species = "VENONAT" },     -- 15.23%
+      { level = 24, species = "EXEGGCUTE" },   -- 9.77%
+      { level = 31, species = "NIDORINO" },    -- 9.77%
+      { level = 22, species = "NIDORAN_M" },   -- 9.77%
+      { level = 23, species = "SCYTHER" },     -- 5.08%
+      { level = 23, species = "PINSIR" },      -- 5.08%
+      { level = 31, species = "NIDORINA" },    -- 4.30%
+      { level = 30, species = "PARASECT" },    -- 1.17%
     },
   },
 })
