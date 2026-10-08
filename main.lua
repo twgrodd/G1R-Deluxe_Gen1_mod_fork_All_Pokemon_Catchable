@@ -534,25 +534,18 @@ mod.content.encounters:patch("SAFARI_ZONE_NORTH", {
 
 mod.content.encounters:patch("SEAFOAM_ISLANDS_B2F", {
   grass = {
-    -- Custom cumulative buckets out of 256 for the intended rates below.
-    buckets = { 41, 92, 130, 156, 181, 207, 220, 233, 243, 256 },
+    -- Standard 10-slot encounter weights; no unsupported custom buckets.
     slots = {
-      { level = 30, species = "SEEL" },       -- 16%
-      { level = 30, species = "SLOWPOKE" },   -- 20%
-
-      { level = 32, species = "SEEL" },       -- 15%
-
-      { level = 32, species = "SLOWPOKE" },   -- 10%
-      { level = 28, species = "HORSEA" },     -- 10%
-      { level = 30, species = "STARYU" },     -- 10%
-
-      { level = 37, species = "SLOWBRO" },    -- 5%
-      { level = 28, species = "SHELLDER" },   -- 5%
-
-      { level = 30, species = "GOLBAT" },     -- 4%
-
-      -- Rare starter encounter
-      { level = 23, species = "SQUIRTLE" },   -- 5%
+      { level = 30, species = "SEEL" },       -- 19.92%
+      { level = 30, species = "SLOWPOKE" },   -- 19.92%
+      { level = 28, species = "SHELLDER" },   -- 15.23%
+      { level = 23, species = "SQUIRTLE" },   -- 9.77%
+      { level = 28, species = "HORSEA" },     -- 9.77%
+      { level = 30, species = "STARYU" },     -- 9.77%
+      { level = 28, species = "SLOWPOKE" },   -- 5.08%
+      { level = 37, species = "SLOWBRO" },    -- 5.08%
+      { level = 32, species = "SEEL" },       -- 4.30%
+      { level = 30, species = "GOLBAT" },     -- 1.17%
     },
   },
 })
